@@ -1,0 +1,12 @@
+﻿iPhone 8 Plus
+	Precio: $599
+	Descripción: Funda Cuero Reforzada Iphone 8, ideal para el cuidado de tu celular.
+iPhone 11 Pro
+	Precio: $8.499
+	Descripción: Funda Oficial De Apple Cuero Para iPhone 11 Pro Max, Marron
+Samsung Note 10
+	Precio: $4.499
+	Descripción: Funda Original Cuero Leather Cover Case Samsung Galaxy Note 10 Note 10 Plus Blister Cerrado
+Samsung S10e
+	Precio: $2.499
+	Descripción: Funda Cuero Cover Samsung Original S10 Plus S10e

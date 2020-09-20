@@ -1,0 +1,12 @@
+iPhone 11 Pro
+	Precio:
+	Descripción: 
+Samsung Note 10 Plus
+	Precio:
+	Descripción: 
+Samsung S10 Plus
+	Precio:
+	Descripción: 
+Xiaomi Mi 9
+	Precio:
+	Descripción: 

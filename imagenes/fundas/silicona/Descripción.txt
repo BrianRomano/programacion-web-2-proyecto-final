@@ -1,0 +1,12 @@
+Huawei P30
+	Precio:
+	Descripción: 
+iPhone 8 Plus
+	Precio:
+	Descripción: 
+Samsung S10
+	Precio:
+	Descripción: 
+Xiaomi Mi 9
+	Precio:
+	Descripción: 

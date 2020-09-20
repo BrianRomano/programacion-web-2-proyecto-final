@@ -1,0 +1,12 @@
+Huawei P30
+	Precio:
+	Descripción: 
+iPhone X
+	Precio:
+	Descripción: 
+Samsung A50
+	Precio:
+	Descripción: 
+Xiaomi Mi 9T
+	Precio:
+	Descripción: 
