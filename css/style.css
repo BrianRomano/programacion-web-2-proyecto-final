@@ -1,21 +1,20 @@
+/*Generales*/
 * {
     margin: 0px;
     padding: 0px;
 }
 
 /*Body*/
-
 body {
     background-color: #ffffff;
 }
 
 
-/* Inicio - Barra de navegación*/
-
+/* Barra de navegación*/
 .navbar-collapse {
     background: #FFFFFF;
     margin: 2px -31px 0px -31px;
-    height: 415px;
+    height: 246px !important;
 }
 
 .navbar {
@@ -27,7 +26,6 @@ body {
 .navbar-light .navbar-toggler {
     border-style: none;
 }
-
 
 .logo {
     max-height: 55px;
@@ -62,11 +60,7 @@ body {
     color: #0D47A1 !important;
 }
 
-/*Fin - Barra de navegación*/
-
-
-/*Inicio - Cards*/
-
+/*Cards*/
 #producto {
     background-color: #EEEEEE;
     border-radius: 4px;
@@ -100,29 +94,14 @@ body {
     color: #424242;
 }
 
-.precio span {
-    font-size: 14px;
-    color: #1565C0;
-    margin-left: 5px;
-}
-
-/*Fin - Cards*/
-
-
-/*Inicio - index.html*/
-
-/*Inicio - Eslogan*/
-
+/*Eslogan*/
 .eslogan {
     max-width: 1366px;
     width: auto;
     height: auto;
 }
 
-/*Fin - Eslogan*/
-
-/*Inicio - Formas de pago*/
-
+/*Formas de pago*/
 .formaDePago {
     max-height: 75px;
     max-width: 350px;
@@ -157,10 +136,7 @@ body {
     color: #0D47A1;
 }
 
-/*Fin - Formas de pago*/
-
-/*Inicio - Titulos/Links de Destacados y Ofertas*/
-
+/*Titulo Destacados */
 #titProductos {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -168,69 +144,7 @@ body {
     color: #424242;
 }
 
-#linkOfertas {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-left: 10px;
-    color: #1565C0;
-}
-
-#linkOfertas:hover {
-    text-decoration: none;
-    color: #0D47A1;
-}
-
-/*Fin - Titulos/Links de Destacados y Ofertas*/
-
-/*Fin - index.html*/
-
-
-/*Inicio - sucursales.html*/
-
-/*Inicio - Sección*/
-
-#sucursales {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    color: #424242;
-    margin-top: 35px;
-}
-
-.mapa {
-    margin-top: 48px;
-    max-width: 348px;
-    max-height: 437px;
-}
-
-.mapa h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #424242;
-}
-
-.mapa p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: #424242;
-    margin-bottom: 25px;
-}
-
-.mapa iframe {
-    height: 350px;
-    width: 345px;
-    box-shadow: 0px 0px 5px 1px #9E9E9E;
-}
-
-/*Fin - Sección*/
-
-/*Fin - sucursales.html*/
-
-
-/*Inicio - contacto.html*/
-
-/*Inicio - Formulario de Contacto*/
-
+/*Formulario de Contacto*/
 #titContacto {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
@@ -307,10 +221,7 @@ input[type="submit"]:hover {
     box-shadow: 0px 0px 5px 1px #9E9E9E;
 }
 
-/*Fin - Formulario de Contacto*/
-
-/*Inicio - Información de Contacto*/
-
+/*Información de Contacto*/
 .infoCont {
     max-height: 110px;
     margin: 55px 55px 0px 120px;
@@ -331,13 +242,7 @@ input[type="submit"]:hover {
     margin: 15px 0px 0px 15px;
 }
 
-/*Fin - Información de Contacto*/
-
-/*Fin - contacto.html*/
-
-
-/*Inicio - Footer*/
-
+/*Footer*/
 #footer {
     background: #000000;
     margin-top: 80px;
@@ -379,17 +284,13 @@ input[type="submit"]:hover {
     list-style: none;
     text-align: center;
     margin-top: 35px;
-}
-
-#sucFooter a {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #9E9E9E;
 }
 
-#sucFooter a:hover {
+#sucFooter li:hover {
     text-decoration: none;
     color: #FFC107;
+    cursor: pointer;
 }
-
-/*Fin - Footer*/
