@@ -33,16 +33,15 @@
                     <form action="#" method="POST">
                         <h1 id="titContacto">Formulario de Contacto</h1>
                         <div class="formCont">
-                            <img class="imgForm img-fluid" src="imagenes/iconos/formulario-de-contacto/nombre-apellido.png" width="512" height="512" alt="Nombre y Apellido">
-                            <input type="text" name="nombre-apellido" placeholder="Ingrese su nombre y apellido" required>
+                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="text" name="apellido" placeholder="Apellido">
                         </div>
                         <div class="formCont">
-                            <img class="imgForm img-fluid" src="imagenes/iconos/formulario-de-contacto/telefono.png" width="512" height="512" alt="Teléfono">
-                            <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
+                            <input type="tel" name="telefono" placeholder="Teléfono">
                         </div>
                         <div class="formCont">
-                            <img class="imgForm img-fluid" src="imagenes/iconos/formulario-de-contacto/email.png" width="512" height="512" alt="Email">
-                            <input type="email" name="email" placeholder="Ingrese su email" required>
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="text" name="asunto" placeholder="Asunto">
                         </div>
                         <div class="mensaje">
                             <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
