@@ -41,7 +41,7 @@
                         </div>
                         <div class="formCont">
                             <input type="email" name="email" placeholder="Email">
-                            <input type="text" name="asunto" placeholder="Asunto">
+                            <input type="text" name="area" placeholder="Área">
                         </div>
                         <div class="mensaje">
                             <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
