@@ -21,6 +21,7 @@ body {
     background-color: #FFC107 !important;
     height: 75px;
     z-index: 1;
+    font-family: 'Roboto';
 }
 
 .navbar-light .navbar-toggler {
@@ -58,6 +59,22 @@ body {
 
 .nav-item a:hover {
     color: #0D47A1 !important;
+}
+
+.dropdown{
+    margin-left: 800px;
+}
+
+.dropdown button{
+    background-color: #1565C0 !important;
+}
+
+.dropdown button:hover{
+    background-color: #0D47A1 !important;
+}
+
+.dropdown .dropdown-menu form input[type="text"], input[type="tel"], input[type="email"] {
+    width: 220px !important;
 }
 
 /*Cards*/
