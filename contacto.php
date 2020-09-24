@@ -30,7 +30,7 @@
             <div class="row">
                 <!-- Formulario de Contacto -->
                 <div class="col-12 col-md-12 col-sm-12 col-lg-6">
-                    <form action="#" method="POST">
+                    <form class ="contacto" action="#" method="POST">
                         <h1 id="titContacto">Formulario de Contacto</h1>
                         <div class="formCont">
                             <input type="text" name="nombre" placeholder="Nombre">
