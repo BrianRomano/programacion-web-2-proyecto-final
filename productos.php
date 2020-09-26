@@ -67,7 +67,7 @@
                     <p>
                         <span id="tituloArticulo">Iphone 8 plus</span><br>
                         <span id="precioArticulo">$500</span><br>
-                        <span id="descripcionArticulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima praesentium laborum nulla nemo. </span>
+                        <span id="descripcionArticulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!</span>
                     </p>
                 </article>
             </a>

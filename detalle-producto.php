@@ -27,18 +27,17 @@
 
     <!-- Inicio - Contenido -->
     <div id="contenedor"> 
-        <section id="seccionDetalle">
             <article class="articuloDetalle">
                 <img class="imagenProductoDetalle" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
                 <p>
-                    <span id="tituloArticuloDetalle">Iphone 8 plus</span><br>
+                    <span id="tituloArticuloDetalle">iPhone 8 Plus</span><br>
                     <span id="precioArticuloDetalle">$500</span><br>
-                    <span id="descripcionArticuloDetalle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima praesentium laborum nulla nemo. </span>
+                    <span id="descripcionArticuloDetalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis repudiandae aut quas porro nisi ab sapiente dolores minus minima quidem, iste, blanditiis deserunt. Id necessitatibus minus eaque expedita tempore.</span>
+                    <br><input class="botonDetalle comprar" type="submit" value = "Comprar">
+                    <br><input class="botonDetalle agregarCarrito" type="submit" value = "Agregar al carrito">
                 </p>
-                <input class="botonDetalle comprar" type="submit" value = "Comprar">
-                <input class="botonDetalle agregarCarrito" type="submit" value = "Agregar al carrito">
             </article>
-            <form action="" method = "">
+            <form class="comentarios" action="" method = "">
                 <h4>Opiniones sobre el producto</h4>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email</label>
@@ -60,9 +59,8 @@
                     <input id="radio5" type="radio" name="estrellas" value="1">
                     <label for="radio5">★</label>
                 </p>
-                <input class="botonAside crear" type="submit" value="Comentar">
+                <input class="botonAside crear comentar" type="submit" value="Comentar">
             </form>
-        </section>
     </div>
     <!-- Fin - Contenido -->
 
