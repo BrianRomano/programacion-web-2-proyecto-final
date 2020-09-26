@@ -2,7 +2,6 @@
 <div id="footer" class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-12 col-sm-12 col-lg-6">
-            <div class="container">
                 <h2 id="titFooter">Redes Sociales</h2>
                 <div class="row">
                     <div class="col-4 col-md-4 col-sm-4 col-lg-12">
@@ -24,9 +23,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-        <div class="d-none d-lg-block col-lg-6">
+        <div class="sucursales d-none d-lg-block col-lg-6">
             <h2 id="titFooter">Sucursales</h2>
             <ul id="sucFooter">
                 <li>Av. Santa Fe 3201, Palermo</li>
