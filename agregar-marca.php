@@ -16,18 +16,13 @@
     <!-- Titulo -->
     <title>Cases | Fundas para celulares</title>
 </head>
-
 <body>
     <!-- Inicio - Header -->
     <header>
-        <!-- Barra de navegación -->
+    <!-- Barra de navegación -->
         <?php include("includes/nav.php"); ?>
     </header>
     <!-- Fin - Header -->
-
-    <!-- Inicio - Sección -->
-
-    <!-- Fin - Sección -->
 
     <!-- Inicio - Footer -->
     <footer>

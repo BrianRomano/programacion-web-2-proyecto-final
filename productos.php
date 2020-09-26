@@ -25,166 +25,57 @@
     </header>
     <!-- Fin - Header -->
 
-    <!-- Inicio - Sección -->
-    <section>
-        <div class="container">
-        <h1 id="titProductos">Productos</h1>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/iphone-11-pro.jpg" width="850" height="850" alt="iPhone 11 Pro">
-                            <p class="precio">$1399</p>
-                            <p class="descProducto">Iphone 11 Pro</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
-                            <p class="precio">$899</p>
-                            <p class="descProducto">iPhone 8 Plus</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/samsung-note-10.jpg" width="850" height="850" alt="Samsung Note 10">
-                            <p class="precio">$999</p>
-                            <p class="descProducto">Samsung Note 10</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/samsung-s10e.jpg" width="850" height="850" alt="Samsung S10e">
-                            <p class="precio">$799</p>
-                            <p class="descProducto">Samsung S10e</p>
-                        </a>
-                    </article>
-                </div>
+    <!-- Inicio - Contenido -->
+    <div class = "contenido">
+        <!-- Inicio - Barra lateral -->
+        <aside id="aside">
+            <div class="filtro">
+                <h4 class="">Categoria</h4>
+                <a href="#">categoria</a>
+  
             </div>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/samsung-a50.jpg" width="850" height="850" alt="Samsung A50">
-                            <p class="precio">$649</p>
-                            <p class="descProducto">Samsung A50</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/huawei-p30.jpg" width="850" height="850" alt="Huawei P30">
-                            <p class="precio">$699</p>
-                            <p class="descProducto">Huawei P30</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/iphone-x.jpg" width="850" height="850" alt="iPhone X">
-                            <p class="precio">$949</p>
-                            <p class="descProducto">iPhone X</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/xiaomi-mi-9t.jpg" width="850" height="850" alt="Xiaomi Mi 9T">
-                            <p class="precio">$899</p>
-                            <p class="descProducto">Xiaomi Mi 9T</p>
-                        </a>
-                    </article>
-                </div>
+            <div class="filtro">
+                <h4 class="">Marcas</h4>
+                <a href="#">marca</a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/huawei-p30.jpg" width="850" height="850" alt="Huawei P30">
-                            <p class="precio">$549</p>
-                            <p class="descProducto">Huawei P30</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
-                            <p class="precio">$899</p>
-                            <p class="descProducto">iPhone 8 Plus</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/samsung-s10.jpg" width="850" height="850" alt="Samsung S10">
-                            <p class="precio">$599</p>
-                            <p class="descProducto">Samsung S10</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/xiaomi-mi-9.jpg" width="850" height="850" alt="Xiaomi 9">
-                            <p class="precio">$499</p>
-                            <p class="descProducto">Xiaomi Mi 9</p>
-                        </a>
-                    </article>
-                </div>
+            <div class="filtro">
+                <h4 class="">Modelo</h4>
+                <a href="#">modelo</a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/iphone-11-pro.jpg" width="850" height="850" alt="iPhone 11 Pro">
-                            <p class="precio">$1199</p>
-                            <p class="descProducto">iPhone 11 Pro</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/samsung-note-10.jpg" width="850" height="850" alt="Samsung Note 10">
-                            <p class="precio">$849</p>
-                            <p class="descProducto">Samsung Note 10</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/xiaomi-mi-9.jpg" width="850" height="850" alt="Xiaomi Mi 9">
-                            <p class="precio">$749</p>
-                            <p class="descProducto">Xiaomi Mi 9</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/samsung-s10-plus.jpg" width="850" height="850" alt="Samsung S10 Plus">
-                            <p class="precio">$799</p>
-                            <p class="descProducto">Samsung S10 Plus</p>
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fin - Sección -->
 
+            <a href="crear-categoria.php">
+                <input class="botonAside crear" type="submit" value = "Crear categoria">
+            </a>
+            <a href="agregar-marca.php">
+                <input class="botonAside agregarMarca" type="submit" value = "Agregar marca">
+            </a>
+            <a href="agregar-modelo.php">
+                <input class="botonAside agregarModelo" type="submit" value = "Agregar modelo">
+            </a>
+            <a href="productos.php">
+                <input class="botonAside borrar" type="submit" value = "Borrar filtros">
+            </a>
+        </aside>
+        <!-- Fin - Barra lateral -->
+
+        <!-- Inicio - Sección -->
+        <section id="seccion">
+            <h1 class = "titProductos">Productos</h1>
+            <a href="detalle-producto.php">
+                <article class="articulo">
+                    <img class="imagenProducto" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
+                    <p>
+                        <span id="tituloArticulo">Iphone 8 plus</span><br>
+                        <span id="precioArticulo">$500</span><br>
+                        <span id="descripcionArticulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima praesentium laborum nulla nemo. </span>
+                    </p>
+                </article>
+            </a>
+        </section>
+        <!-- Fin - Sección -->
+    </div>
+    <!-- Fin - Contenido -->  
+  
     <!-- Inicio - Footer -->
     <footer>
         <?php include("includes/footer.php"); ?>

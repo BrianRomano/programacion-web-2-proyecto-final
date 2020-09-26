@@ -7,7 +7,7 @@
         </a>
 
         <!-- Boton - Login -->
-        <div class="dropdown">
+        <div class="dropdown login">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Iniciar sesión
             </button>
