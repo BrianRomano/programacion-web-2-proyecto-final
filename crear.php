@@ -40,13 +40,6 @@
                 <input class="botonAside crear" type="submit" value = "Crear marca">
             </form>
         </article>
-        <article id="completarAside">
-            <h2 class="opcionAside">Crear Modelo</h1>
-            <form action="" method= "">
-                <input type="text" placeholder="Ingrese el nuevo modelo"><br>
-                <input class="botonAside crear" type="submit" value = "Crear modelo">
-            </form>
-        </article>
     </section>
     <!-- Fin - Seccion -->
 

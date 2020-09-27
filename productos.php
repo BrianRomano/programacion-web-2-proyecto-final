@@ -37,11 +37,6 @@
                 <h4 class="">Marcas</h4>
                 <a href="#">marca</a>
             </div>
-            <div class="filtro">
-                <h4 class="">Modelo</h4>
-                <a href="#">modelo</a>
-            </div>
-
             <a href="crear.php">
                 <input class="botonAside crear" type="submit" value = "Crear">
             </a>

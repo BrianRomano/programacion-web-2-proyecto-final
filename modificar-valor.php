@@ -40,13 +40,6 @@
                 <input class="botonAside modificar agregarModelo" type="submit" value = "Modificar marca">
             </form>
         </article>
-        <article id="completarAside">
-            <h2 class="opcionAside">Modificar Modelo</h1>
-            <form action="" method= "">
-                <input type="text" placeholder="Ingrese el nuevo modelo"><br>
-                <input class="botonAside modificar agregarModelo" type="submit" value = "Modificar modelo">
-            </form>
-        </article>
     </section>
     <!-- Fin - Seccion -->
 

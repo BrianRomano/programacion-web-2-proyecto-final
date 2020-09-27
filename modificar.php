@@ -60,23 +60,6 @@
                 <input class="botonAside crear modificar agregarModelo" type="submit" value = "Modificar marca">
             </form>
         </article>
-        <article id="completarAside">
-            <h2 class="opcionAside">Modificar Modelo</h1>
-            <form action="modificar-valor.php" method="get">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Modelos</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Modelo</option>
-                        <option value="1">Modelo1</option>
-                        <option value="2">Modelo2</option>
-                        <option value="3">Modelo3</option>
-                    </select>
-                </div>
-                <input class="botonAside crear modificar agregarModelo" type="submit" value = "Modificar modelo">
-            </form>
-        </article>
     </section>
     <!-- Fin - Seccion -->
 
