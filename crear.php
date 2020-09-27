@@ -24,6 +24,32 @@
     </header>
     <!-- Fin - Header -->
 
+    <!-- Inicio- Seccion -->
+    <section>
+        <article id="completarAside">
+            <h2 class="opcionAside">Crear Categoria</h1>
+            <form action="" method= "">
+                <input type="text" placeholder="Ingrese la nueva categoria"><br>
+                <input class="botonAside crear" type="submit" value = "Crear categoria">
+            </form>
+        </article>
+        <article id="completarAside">
+            <h2 class="opcionAside">Crear Marca</h1>
+            <form action="" method= "">
+                <input type="text" placeholder="Ingrese la nueva marca"><br>
+                <input class="botonAside crear" type="submit" value = "Crear marca">
+            </form>
+        </article>
+        <article id="completarAside">
+            <h2 class="opcionAside">Crear Modelo</h1>
+            <form action="" method= "">
+                <input type="text" placeholder="Ingrese el nuevo modelo"><br>
+                <input class="botonAside crear" type="submit" value = "Crear modelo">
+            </form>
+        </article>
+    </section>
+    <!-- Fin - Seccion -->
+
     <!-- Inicio - Footer -->
     <footer>
         <?php include("includes/footer.php"); ?>    

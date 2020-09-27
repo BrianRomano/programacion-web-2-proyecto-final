@@ -30,9 +30,8 @@
         <!-- Inicio - Barra lateral -->
         <aside id="aside">
             <div class="filtro">
-                <h4 class="">Categoria</h4>
+                <h4 class="">Categorias</h4>
                 <a href="#">categoria</a>
-  
             </div>
             <div class="filtro">
                 <h4 class="">Marcas</h4>
@@ -43,14 +42,11 @@
                 <a href="#">modelo</a>
             </div>
 
-            <a href="crear-categoria.php">
-                <input class="botonAside crear" type="submit" value = "Crear categoria">
+            <a href="crear.php">
+                <input class="botonAside crear" type="submit" value = "Crear">
             </a>
-            <a href="agregar-marca.php">
-                <input class="botonAside agregarMarca" type="submit" value = "Agregar marca">
-            </a>
-            <a href="agregar-modelo.php">
-                <input class="botonAside agregarModelo" type="submit" value = "Agregar modelo">
+            <a href="modificar.php">
+                <input class="botonAside agregarModelo" type="submit" value = "Modificar">
             </a>
             <a href="productos.php">
                 <input class="botonAside borrar" type="submit" value = "Borrar filtros">

@@ -57,7 +57,7 @@
 
         <!-- Destacados -->
         <div class="container">
-            <h1 id="titProductos">Destacados</h1>
+            <h1 id="titProductos">Destacados<span><a href="productos.php">Ver más</a></span></h1>
             <div class="row">
                 <div class="col-6 col-md-6 col-sm-6 col-lg-3">
                     <article id="producto" class="mx-auto">
