@@ -74,7 +74,7 @@
             'id_producto' => 8, 
             'nombre' => 'Xiaomi Mi 9',
             'precio' => 799, 
-            'imagen' => 'samsung-s10e.jpg', 
+            'imagen' => 'xiaomi-mi-9.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
             'id_categoria' => 2, 

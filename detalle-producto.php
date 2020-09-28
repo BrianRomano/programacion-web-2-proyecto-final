@@ -26,41 +26,49 @@
     <!-- Fin - Header -->
 
     <!-- Inicio - Contenido -->
+    <?php 
+        include("datos/producto.php"); 
+        foreach($producto as $prod){
+            if($prod['id_producto'] == $_GET['id']){
+                break;
+            }
+        }
+    ?>
     <div id="contenedor"> 
-            <article class="articuloDetalle">
-                <img class="imagenProductoDetalle" src="imagenes/fundas/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
-                <p>
-                    <span id="tituloArticuloDetalle">iPhone 8 Plus</span><br>
-                    <span id="precioArticuloDetalle">$500</span><br>
-                    <span id="descripcionArticuloDetalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis repudiandae aut quas porro nisi ab sapiente dolores minus minima quidem, iste, blanditiis deserunt. Id necessitatibus minus eaque expedita tempore.</span>
-                    <br><input class="botonDetalle comprar" type="submit" value = "Comprar">
-                    <br><input class="botonDetalle agregarCarrito" type="submit" value = "Agregar al carrito">
-                </p>
-            </article>
-            <form class="comentarios" action="" method = "">
-                <h4>Opiniones sobre el producto</h4>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Comentario</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
-                </div>
-                <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5">
-                    <label class="estrella" for="radio1">★</label>
-                    <input id="radio2" type="radio" name="estrellas" value="4">
-                    <label for="radio2">★</label>
-                    <input id="radio3" type="radio" name="estrellas" value="3">
-                    <label for="radio3">★</label>
-                    <input id="radio4" type="radio" name="estrellas" value="2">
-                    <label for="radio4">★</label>
-                    <input id="radio5" type="radio" name="estrellas" value="1">
-                    <label for="radio5">★</label>
-                </p>
-                <input class="botonAside crear comentar" type="submit" value="Comentar">
-            </form>
+        <article class="articuloDetalle">
+            <img class="imagenProductoDetalle" src="imagenes/fundas/<?php echo $prod['imagen'] ?>" width="850" height="850">
+            <p>
+                <span id="tituloArticuloDetalle"><?php echo $prod['nombre']?></span><br>
+                <span id="precioArticuloDetalle">$<?php echo $prod['precio'] ?></span><br>
+                <span id="descripcionArticuloDetalle"><?php echo $prod['descripcion']?></span>
+                <br><input class="botonDetalle comprar" type="submit" value = "Comprar">
+                <br><input class="botonDetalle agregarCarrito" type="submit" value = "Agregar al carrito">
+            </p>
+        </article>
+        <div class="comentarios">
+            <h4>Opiniones sobre el producto</h4>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
+            </div>
+            <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label class="estrella" for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+                <input id="radio5" type="radio" name="estrellas" value="1">
+                <label for="radio5">★</label>
+            </p>
+            <input class="botonAside crear comentar" type="submit" value="Comentar">
+        </div>
     </div>
     <!-- Fin - Contenido -->
 

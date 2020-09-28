@@ -185,12 +185,13 @@ body {
 }
 
 #aside .filtro a{
-    color: #21212196 !important;
+    text-decoration: none;
+    color: #212121be !important;
 }
 
-#aside .filtro a{
+#aside .filtro a:hover{
     text-decoration: none;
-    color: #212121dc !important;
+    color: #212121 !important;
 }
 
 .botonAside {

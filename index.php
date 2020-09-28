@@ -62,17 +62,21 @@
                 <?php 
                    include("datos/destacado.php"); 
                    foreach($destacado as $dest):
+                        if($dest['activo'] == true):
                 ?>
-                    <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                        <article id="producto" class="mx-auto">
-                            <a href="detalle-producto.php?dest=<?php echo $dest['id_producto'] ?>">
-                                <img class="imgProducto img-fluid" src="imagenes/fundas/<?php echo $dest['imagen']?>" width="850" height="850">
-                                <p class="precio">$<?php echo $dest['precio']?></p>
-                                <p class="descProducto"><?php echo $dest['nombre'] ?></p>
-                            </a>
-                        </article>
-                    </div>
-                <?php endforeach; ?>
+                        <div class="col-6 col-md-6 col-sm-6 col-lg-3">
+                            <article id="producto" class="mx-auto">
+                                <a href="detalle-producto.php?id=<?php echo $dest['id_producto']?>">
+                                    <img class="imgProducto img-fluid" src="imagenes/fundas/<?php echo $dest['imagen']?>" width="850" height="850">
+                                    <p class="precio">$<?php echo $dest['precio']?></p>
+                                    <p class="descProducto"><?php echo $dest['nombre'] ?></p>
+                                </a>
+                            </article>
+                        </div>
+                <?php 
+                        endif;
+                    endforeach; 
+                ?>
             </div>
         </div>
     </section>

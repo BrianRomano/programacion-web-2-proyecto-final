@@ -5,6 +5,7 @@
             'nombre' => 'iPhone 8 Plus', 
             'imagen' => 'iphone-8-plus.jpg', 
             'precio' => 899,
+            'activo' => true,
             'id_producto' => 1
         ),
         2 => array(
@@ -12,6 +13,7 @@
             'nombre' => 'iPhone X', 
             'imagen' => 'iphone-x.jpg', 
             'precio' => 949,
+            'activo' => true,
             'id_producto' => 10
         ),
         3 => array(
@@ -19,6 +21,7 @@
             'nombre' => 'Samsung S10', 
             'imagen' => 'samsung-s10.jpg', 
             'precio' => 599,
+            'activo' => true,
             'id_producto' => 15
         ),
         4 => array(
@@ -26,6 +29,7 @@
             'nombre' => 'iPhone 11 Pro', 
             'imagen' => 'iphone-11-pro-dos.jpg', 
             'precio' => 1199,
+            'activo' => true,
             'id_producto' => 5
         ),
         5 => array(
@@ -33,6 +37,7 @@
             'nombre' => 'Samsung Note 10', 
             'imagen' => 'samsung-note-10-2.jpg', 
             'precio' => 799,
+            'activo' => true,
             'id_producto' => 6
         ),
         6 => array(
@@ -40,6 +45,7 @@
             'nombre' => 'Xiaomi Mi 9', 
             'imagen' => 'xiaomi-mi-9-2.jpg', 
             'precio' => 499,
+            'activo' => true,
             'id_producto' => 16
         ),
         7 => array(
@@ -47,6 +53,7 @@
             'nombre' => 'Huawei P30', 
             'imagen' => 'huawei-p30.jpg', 
             'precio' => 699,
+            'activo' => true,
             'id_producto' => 9
         ),
         8 => array(
@@ -54,6 +61,7 @@
             'nombre' => 'iPhone 8 Plus', 
             'imagen' => 'iphone-8-plus-2.jpg', 
             'precio' => 899,
+            'activo' => true,
             'id_producto' => 14
         ),
         9 => array(
@@ -61,6 +69,7 @@
             'nombre' => 'Huawei P30', 
             'imagen' => 'huawei-p30-2.jpg', 
             'precio' => 549,
+            'activo' => true,
             'id_producto' => 13
         ),
         10 => array(
@@ -68,6 +77,7 @@
             'nombre' => 'Samsung S10 Plus', 
             'imagen' => 'samsung-s10-plus.jpg', 
             'precio' => 799,
+            'activo' => true,
             'id_producto' => 7
         ),
         11 => array(
@@ -75,6 +85,7 @@
             'nombre' => 'Samsung Note 10', 
             'imagen' => 'samsung-note-10.jpg', 
             'precio' => 999,
+            'activo' => true,
             'id_producto' => 3
         ),
         12 => array(
@@ -82,6 +93,7 @@
             'nombre' => 'iPhone X', 
             'imagen' => 'iphone-x.jpg', 
             'precio' => 949,
+            'activo' => true,
             'id_producto' => 10
         )
     );
