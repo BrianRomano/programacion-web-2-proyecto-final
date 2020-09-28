@@ -59,118 +59,20 @@
         <div class="container">
             <h1 id="titProductos">Destacados<span><a href="productos.php">Ver más</a></span></h1>
             <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
-                            <p class="precio">$899</p>
-                            <p class="descProducto">iPhone 8 Plus</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/iphone-x.jpg" width="850" height="850" alt="iPhone X">
-                            <p class="precio">$949</p>
-                            <p class="descProducto">iPhone X</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/samsung-s10.jpg" width="850" height="850" alt="Samsung S10">
-                            <p class="precio">$599</p>
-                            <p class="descProducto">Samsung S10</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/iphone-11-pro.jpg" width="850" height="850" alt="iPhone 11 Pro">
-                            <p class="precio">$1199</p>
-                            <p class="descProducto">iPhone 11 Pro</p>
-                        </a>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/samsung-note-10.jpg" width="850" height="850" alt="Samsung Note 10">
-                            <p class="precio">$849</p>
-                            <p class="descProducto">Samsung Note 10</p>
-                        </a>  
-                    </article> 
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/xiaomi-mi-9.jpg" width="850" height="850" alt="Xiaomi Mi 9">
-                            <p class="precio">$499</p>
-                            <p class="descProducto">Xiaomi Mi 9</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/huawei-p30.jpg" width="850" height="850" alt="Huawei P30">
-                            <p class="precio">$699</p>
-                            <p class="descProducto">Huawei P30</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/samsung-s10e.jpg" width="850" height="850" alt="Samsung S10e">
-                            <p class="precio">$799</p>
-                            <p class="descProducto">iPhone 8 Plus</p>
-                        </a>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/silicona/huawei-p30.jpg" width="850" height="850" alt="Huawei P30">
-                            <p class="precio">$549</p>
-                            <p class="descProducto">Huawei P30</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/dibujos/samsung-s10-plus.jpg" width="850" height="850" alt="Samsung S10 Plus">
-                            <p class="precio">$799</p>
-                            <p class="descProducto">Samsung S10 Plus</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/cuero/samsung-note-10.jpg" width="850" height="850" alt="Samsung Note 10">
-                            <p class="precio">$999</p>
-                            <p class="descProducto">Samsung Note 10</p>
-                        </a>
-                    </article>
-                </div>
-                <div class="col-6 col-md-6 col-sm-6 col-lg-3">
-                    <article id="producto" class="mx-auto">
-                        <a href="detalle-producto.php">
-                            <img class="imgProducto img-fluid" src="imagenes/fundas/madera/iphone-x.jpg" width="850" height="850" alt="iPhone X">
-                            <p class="precio">$949</p>
-                            <p class="descProducto">iPhone X</p>
-                        </a>
-                    </article>
-                </div>
+                <?php 
+                   include("datos/destacado.php"); 
+                   foreach($destacado as $dest):
+                ?>
+                    <div class="col-6 col-md-6 col-sm-6 col-lg-3">
+                        <article id="producto" class="mx-auto">
+                            <a href="detalle-producto.php?dest=<?php echo $dest['id_producto'] ?>">
+                                <img class="imgProducto img-fluid" src="imagenes/fundas/<?php echo $dest['imagen']?>" width="850" height="850">
+                                <p class="precio">$<?php echo $dest['precio']?></p>
+                                <p class="descProducto"><?php echo $dest['nombre'] ?></p>
+                            </a>
+                        </article>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

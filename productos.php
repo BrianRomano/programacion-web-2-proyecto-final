@@ -31,18 +31,34 @@
         <aside id="aside">
             <div class="filtro">
                 <h4 class="">Categorias</h4>
-                <a href="#">categoria</a>
+                <?php 
+                    include("datos/categoria.php");
+                    foreach($categoria as $cat):
+                ?>
+                    <li>
+                        <a href="productos.php?cat=<?php echo $cat['id_categoria']?>">
+                            <?php echo $cat['nombre']?>
+                        </a>
+                    </li>
+                <?php 
+                    endforeach; 
+                ?> 
             </div>
             <div class="filtro">
                 <h4 class="">Marcas</h4>
-                <a href="#">marca</a>
+                <?php 
+                    include("datos/marca.php");
+                    foreach($marca as $marc):
+                ?>
+                    <li>
+                        <a href="productos.php?marc=<?php echo $marc['id_marca']?>">
+                            <?php echo $marc['nombre']?>
+                        </a>
+                    </li>
+                <?php 
+                    endforeach;
+                ?>
             </div>
-            <a href="crear.php">
-                <input class="botonAside crear" type="submit" value = "Crear">
-            </a>
-            <a href="modificar.php">
-                <input class="botonAside agregarModelo" type="submit" value = "Modificar">
-            </a>
             <a href="productos.php">
                 <input class="botonAside borrar" type="submit" value = "Borrar filtros">
             </a>
@@ -52,16 +68,23 @@
         <!-- Inicio - Sección -->
         <section id="seccion">
             <h1 class = "titProductos">Productos</h1>
-            <a href="detalle-producto.php">
-                <article class="articulo">
-                    <img class="imagenProducto" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
-                    <p>
-                        <span id="tituloArticulo">Iphone 8 plus</span><br>
-                        <span id="precioArticulo">$500</span><br>
-                        <span id="descripcionArticulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!</span>
-                    </p>
-                </article>
-            </a>
+            <?php
+                include("datos/producto.php");
+                foreach($producto as $prod):
+            ?>
+                <a href="detalle-producto.php">
+                    <article class="articulo">
+                        <img class="imagenProducto" src="imagenes/fundas/<?php echo $prod['imagen'] ?>" width="850" height="850">
+                        <p>
+                            <span id="tituloArticulo"><?php echo $prod['nombre'] ?></span><br>
+                            <span id="precioArticulo">$<?php echo $prod['precio'] ?></span><br>
+                            <span id="descripcionArticulo"><?php echo $prod['descripcion'] ?></span>
+                        </p>
+                    </article>
+                </a>
+            <?php 
+                endforeach;
+            ?>
         </section>
         <!-- Fin - Sección -->
     </div>
@@ -77,4 +100,5 @@
     <script src="bootstrap/jquery/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/popper/popper.min.js"></script>
     <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
-</body></html>
+</body>
+</html>

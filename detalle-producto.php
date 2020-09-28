@@ -28,7 +28,7 @@
     <!-- Inicio - Contenido -->
     <div id="contenedor"> 
             <article class="articuloDetalle">
-                <img class="imagenProductoDetalle" src="imagenes/fundas/cuero/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
+                <img class="imagenProductoDetalle" src="imagenes/fundas/iphone-8-plus.jpg" width="850" height="850" alt="iPhone 8 Plus">
                 <p>
                     <span id="tituloArticuloDetalle">iPhone 8 Plus</span><br>
                     <span id="precioArticuloDetalle">$500</span><br>
