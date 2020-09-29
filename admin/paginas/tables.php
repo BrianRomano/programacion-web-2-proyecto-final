@@ -249,10 +249,10 @@
                           Imagen
                         </th>
                         <th>
-                          Descripción
+                          Activo
                         </th>
                         <th>
-                          Activo
+                          ID Producto
                         </th>
                       </thead>
                       <tbody>
@@ -270,10 +270,10 @@
                             <!-- Imagen -->
                           </td>
                           <td>
-                            <!-- Descripcion -->
+                            <!-- Activo -->
                           </td>
                           <td>
-                            <!-- Activo -->
+                            <!-- ID Producto -->
                           </td>
                         </tr>
                       </tbody>
