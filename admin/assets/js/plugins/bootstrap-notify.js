@@ -81,13 +81,13 @@
     $('[data-notify="container"]').each(function(i, el) {
       var $el = $(el);
       var title = $el.find('[data-notify="title"]').text().trim();
-      var message = $el.find('[data-notify="message"]').html().trim();
+      var message = $el.find('[data-notify="message"]').php().trim();
 
       // The input string might be different than the actual parsed HTML string!
       // (<br> vs <br /> for example)
       // So we have to force-parse this as HTML here!
-      var isSameTitle = title === $("<div>" + notification.settings.content.title + "</div>").html().trim();
-      var isSameMsg = message === $("<div>" + notification.settings.content.message + "</div>").html().trim();
+      var isSameTitle = title === $("<div>" + notification.settings.content.title + "</div>").php().trim();
+      var isSameMsg = message === $("<div>" + notification.settings.content.message + "</div>").php().trim();
       var isSameType = $el.hasClass('alert-' + notification.settings.type);
 
       if (isSameTitle && isSameMsg && isSameType) {
@@ -171,7 +171,7 @@
               case "icon":
                 var $icon = this.$ele.find('[data-notify="icon"]');
                 if (self.settings.icon_type.toLowerCase() === 'class') {
-                  $icon.html(commands[cmd]);
+                  $icon.php(commands[cmd]);
                 } else {
                   if (!$icon.is('img')) {
                     $icon.find('img');
@@ -191,7 +191,7 @@
                 this.$ele.find('[data-notify="url"]').attr('target', commands[cmd]);
                 break;
               default:
-                this.$ele.find('[data-notify="' + cmd + '"]').html(commands[cmd]);
+                this.$ele.find('[data-notify="' + cmd + '"]').php(commands[cmd]);
             }
           }
           var posX = this.$ele.outerHeight() + parseInt(self.settings.spacing) + parseInt(self.settings.offset.y);
@@ -219,7 +219,7 @@
       this.$ele.addClass('alert-with-icon');
 
       if (this.settings.icon_type.toLowerCase() === 'class') {
-        this.$ele.find('[data-notify="icon"]').html(this.settings.content.icon);
+        this.$ele.find('[data-notify="icon"]').php(this.settings.content.icon);
       } else {
         if (this.$ele.find('[data-notify="icon"]').is('img')) {
           this.$ele.find('[data-notify="icon"]').attr('src', this.settings.content.icon);
