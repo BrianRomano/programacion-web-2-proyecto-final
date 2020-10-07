@@ -35,13 +35,14 @@
                         <div class="formCont">
                             <input type="text" name="nombre" placeholder="Nombre">
                             <input type="text" name="apellido" placeholder="Apellido">
-                        </div>
-                        <div class="formCont">
                             <input type="tel" name="telefono" placeholder="Teléfono">
-                        </div>
-                        <div class="formCont">
                             <input type="email" name="email" placeholder="Email">
-                            <input type="text" name="area" placeholder="Área">
+                            <select name = "area">
+                                <option value = "online">Envios Online</option>
+                                <option value = "retiro">Retiro en sucursal</option>
+                                <option value = "deposito">Deposito</option>
+                                <option value = "admin">Administración</option>
+                            </select>
                         </div>
                         <div class="mensaje">
                             <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>

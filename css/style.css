@@ -332,7 +332,8 @@ body {
 
 .contacto input[type="text"],
 .contacto input[type="tel"],
-.contacto input[type="email"]{
+.contacto input[type="email"], 
+.contacto select{
     height: 35px;
     width: 443px !important;
     border-style: none;
@@ -631,7 +632,6 @@ body {
 }
 
 .comentarioRealizado article{
-    border: 1px solid #807f7f;
     background: #ebeaea;
     width: 90%;
     min-height: 150px;
