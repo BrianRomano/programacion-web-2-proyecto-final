@@ -61,7 +61,19 @@
           <li class="nav-item active ">
             <a class="nav-link" href="./tables.php">
               <i class="material-icons">content_paste</i>
-              <p>Tablas</p>
+              <p>Materiales</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tables2.php">
+              <i class="material-icons">content_paste</i>
+              <p>Marcas</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tables3.php">
+              <i class="material-icons">content_paste</i>
+              <p>Productos</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -84,7 +96,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand">Tablas</a>
+            <a class="navbar-brand">Materiales</a>
           </div>
         </div>
       </nav>
@@ -95,7 +107,7 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Categorias</h4>
+                  <h4 class="card-title mt-0">Materiales</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -123,166 +135,7 @@
                 </div>
               </div>
               <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
-              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Crear</button>
-            </div>
-            <div class="col-md-12">
-              <div class="card card-plain">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Marcas</h4>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead class="">
-                        <th>
-                          ID
-                        </th>
-                        <th>
-                          Nombre
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <!-- ID -->
-                          </td>
-                          <td>
-                            <!-- Nombre -->
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
-              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Crear</button>
-            </div>
-            <div class="col-md-12">
-              <div class="card card-plain">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Productos</h4>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead class="">
-                        <th>
-                          ID
-                        </th>
-                        <th>
-                          Nombre
-                        </th>
-                        <th>
-                          Precio
-                        </th>
-                        <th>
-                          Imagen
-                        </th>
-                        <th>
-                          Descripción
-                        </th>
-                        <th>
-                          Activo
-                        </th>
-                        <th>
-                          ID Categoria
-                        </th>
-                        <th>
-                          ID Marca
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <!--  ID -->
-                          </td>
-                          <td>
-                            <!-- Nombre -->
-                          </td>
-                          <td>
-                            <!-- Precio -->
-                          </td>
-                          <td>
-                            <!-- Imagen -->
-                          </td>
-                          <td>
-                            <!-- Descripcion -->
-                          </td>
-                          <td>
-                            <!-- Activo -->
-                          </td>
-                          <td>
-                            <!-- ID Categoria -->
-                          </td>
-                          <td>
-                            <!-- ID Marca -->
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
-              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Crear</button>
-            </div>
-            <div class="col-md-12">
-              <div class="card card-plain">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Productos destacados</h4>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead class="">
-                        <th>
-                          ID
-                        </th>
-                        <th>
-                          Nombre
-                        </th>
-                        <th>
-                          Precio
-                        </th>
-                        <th>
-                          Imagen
-                        </th>
-                        <th>
-                          Activo
-                        </th>
-                        <th>
-                          ID Producto
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <!-- ID -->
-                          </td>
-                          <td>
-                            <!-- Nombre -->
-                          </td>
-                          <td>
-                            <!-- Precio -->
-                          </td>
-                          <td>
-                            <!-- Imagen -->
-                          </td>
-                          <td>
-                            <!-- Activo -->
-                          </td>
-                          <td>
-                            <!-- ID Producto -->
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
-              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Crear</button>
+              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Agregar</button>
             </div>
           </div>
         </div>

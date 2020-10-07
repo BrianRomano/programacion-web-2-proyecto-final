@@ -7,6 +7,7 @@
             'imagen' => 'iphone-8-plus.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 1, 
             'id_marca' => 1
         ),
@@ -17,6 +18,7 @@
             'imagen' => 'iphone-11-pro.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 1, 
             'id_marca' => 1
         ),
@@ -27,6 +29,7 @@
             'imagen' => 'samsung-note-10.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 1, 
             'id_marca' => 2
         ),
@@ -37,6 +40,7 @@
             'imagen' => 'samsung-s10e.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 1, 
             'id_marca' => 2
         ),
@@ -47,6 +51,7 @@
             'imagen' => 'iphone-11-pro-dos.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 2, 
             'id_marca' => 1
         ),
@@ -57,6 +62,7 @@
             'imagen' => 'samsung-note-10-2.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => false,
             'id_categoria' => 2, 
             'id_marca' => 2
         ),
@@ -67,6 +73,7 @@
             'imagen' => 'samsung-s10-plus.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 2, 
             'id_marca' => 2
         ),
@@ -77,6 +84,7 @@
             'imagen' => 'xiaomi-mi-9.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 2, 
             'id_marca' => 3
         ),
@@ -87,6 +95,7 @@
             'imagen' => 'huawei-p30.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 3, 
             'id_marca' => 4
         ),
@@ -97,6 +106,7 @@
             'imagen' => 'iphone-x.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => false,
             'id_categoria' => 3, 
             'id_marca' => 1
         ),
@@ -107,6 +117,7 @@
             'imagen' => 'samsung-a50.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 3, 
             'id_marca' => 2
         ),
@@ -117,6 +128,7 @@
             'imagen' => 'xiaomi-mi-9t.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 3, 
             'id_marca' => 3
         ),
@@ -127,6 +139,7 @@
             'imagen' => 'huawei-p30-2.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 4, 
             'id_marca' => 4
         ),
@@ -137,6 +150,7 @@
             'imagen' => 'iphone-8-plus-2.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => false,
             'id_categoria' => 4, 
             'id_marca' => 1
         ),
@@ -147,6 +161,7 @@
             'imagen' => 'samsung-s10.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => true,
             'id_categoria' => 4, 
             'id_marca' => 2
         ),
@@ -157,6 +172,7 @@
             'imagen' => 'xiaomi-mi-9-2.jpg', 
             'descripcion' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi minus nemo? Non aspernatur sunt autem quisquam sed, consequatur corporis tenetur beatae eius similique rerum sequi aliquam at laborum. Deleniti!', 
             'activo' => true,
+            'destacado' => false,
             'id_categoria' => 4, 
             'id_marca' => 3
         )

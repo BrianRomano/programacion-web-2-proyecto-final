@@ -44,7 +44,19 @@
           <li class="nav-item">
             <a class="nav-link" href="paginas/tables.php">
               <i class="material-icons">content_paste</i>
-              <p>Tablas</p>
+              <p>Materiales</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/tables2.php">
+              <i class="material-icons">content_paste</i>
+              <p>Marcas</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/tables3.php">
+              <i class="material-icons">content_paste</i>
+              <p>Productos</p>
             </a>
           </li>
           <li class="nav-item">
@@ -75,26 +87,20 @@
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
-          <h5 class="card-title">Categorias</h5>
+          <h5 class="card-title">Materiales</h5>
           <a href="paginas/tables.php" class="btn btn-primary">Ver categorias</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Marcas</h5>
-          <a href="paginas/tables.php" class="btn btn-primary">Ver marcas</a>
+          <a href="paginas/tables2.php" class="btn btn-primary">Ver marcas</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 70px; ">
         <div class="card-body">
           <h5 class="card-title">Productos</h5>
-          <a href="paginas/tables.php" class="btn btn-primary">Ver productos</a>
-        </div>
-      </div>
-      <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
-        <div class="card-body">
-          <h5 class="card-title">Productos destacados</h5>
-          <a href="paginas/tables.php" class="btn btn-primary">Ver destacados</a>
+          <a href="paginas/tables3.php" class="btn btn-primary">Ver productos</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">

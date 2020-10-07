@@ -46,7 +46,7 @@
             </p>
         </article>
         <div class="comentarios">
-            <h4>Opiniones sobre el producto</h4>
+            <h4>Califique el producto</h4>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
@@ -68,6 +68,21 @@
                 <label for="radio5">★</label>
             </p>
             <input class="botonAside crear comentar" type="submit" value="Comentar">
+        </div>
+        <div class="comentarioRealizado">
+            <h4>Comentarios del producto</h4>
+            <?php include_once("datos/comentario.php"); ?>
+            <article>
+                <p class = "nombreUsuario">
+                    Usuario:
+                </p>
+                <p class = "comentarioUsuario">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione quos animi nobis facere excepturi totam repudiandae. Molestias ducimus doloribus tenetur doloremque? Id ducimus repudiandae officiis obcaecati neque aliquid deleniti!
+                </p>
+                <p class="calificacionUsuario">
+                    Calificación:
+                </p>
+            </article>
         </div>
     </div>
     <!-- Fin - Contenido -->

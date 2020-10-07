@@ -60,16 +60,16 @@
             <h1 id="titProductos">Destacados<span><a href="productos.php">Ver más</a></span></h1>
             <div class="row">
                 <?php 
-                   include("datos/destacado.php"); 
-                   foreach($destacado as $dest):
-                        if($dest['activo'] == true):
+                   include("datos/producto.php"); 
+                   foreach($producto as $prod):
+                        if($prod['activo'] == true && $prod['destacado'] == true):
                 ?>
                         <div class="col-6 col-md-6 col-sm-6 col-lg-3">
                             <article id="producto" class="mx-auto">
-                                <a href="detalle-producto.php?id=<?php echo $dest['id_producto']?>">
-                                    <img class="imgProducto img-fluid" src="imagenes/fundas/<?php echo $dest['imagen']?>" width="850" height="850">
-                                    <p class="precio">$<?php echo $dest['precio']?></p>
-                                    <p class="descProducto"><?php echo $dest['nombre'] ?></p>
+                                <a href="detalle-producto.php?id=<?php echo $prod['id_producto']?>">
+                                    <img class="imgProducto img-fluid" src="imagenes/fundas/<?php echo $prod['imagen']?>" width="850" height="850">
+                                    <p class="precio">$<?php echo $prod['precio']?></p>
+                                    <p class="descProducto"><?php echo $prod['nombre'] ?></p>
                                 </a>
                             </article>
                         </div>

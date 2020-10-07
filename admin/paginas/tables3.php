@@ -42,7 +42,7 @@
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo"><a href="../index.php" class="simple-text logo-normal">
-          Administrador
+         Administrador
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -52,25 +52,25 @@
               <p>Inicio</p>
             </a>
           </li>
-          <li class="nav-item active ">
+          <li class="nav-item ">
             <a class="nav-link" href="./user.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="./tables.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="./tables2.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="./tables3.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
@@ -91,13 +91,12 @@
         </ul>
       </div>
     </div>
-    
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand">Usuarios</a>
+            <a class="navbar-brand">Productos</a>
           </div>
         </div>
       </nav>
@@ -108,7 +107,7 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Datos de usuarios</h4>
+                  <h4 class="card-title mt-0">Productos</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -118,19 +117,58 @@
                           ID
                         </th>
                         <th>
-                          Email
+                          Nombre
+                        </th>
+                        <th>
+                          Precio
+                        </th>
+                        <th>
+                          Imagen
+                        </th>
+                        <th>
+                          Descripción
+                        </th>
+                        <th>
+                          Activo
+                        </th>
+                        <th>
+                          Destacado
+                        </th>
+                        <th>
+                          ID Categoria
+                        </th>
+                        <th>
+                          ID Marca
                         </th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            <!-- Columna ID -->
+                            <!--  ID -->
                           </td>
                           <td>
-                            <!-- Columna Email-->
+                            <!-- Nombre -->
                           </td>
                           <td>
-                            <!-- Columna Contraseña -->
+                            <!-- Precio -->
+                          </td>
+                          <td>
+                            <!-- Imagen -->
+                          </td>
+                          <td>
+                            <!-- Descripcion -->
+                          </td>
+                          <td>
+                            <!-- Activo -->
+                          </td>
+                          <td>
+                            <!-- Destacado -->
+                          </td>
+                          <td>
+                            <!-- ID Categoria -->
+                          </td>
+                          <td>
+                            <!-- ID Marca -->
                           </td>
                         </tr>
                       </tbody>
@@ -138,13 +176,13 @@
                   </div>
                 </div>
               </div>
+              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
+              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Agregar</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 </body>
-
 </html>

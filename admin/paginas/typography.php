@@ -61,7 +61,19 @@
           <li class="nav-item ">
             <a class="nav-link" href="./tables.php">
               <i class="material-icons">content_paste</i>
-              <p>Tablas</p>
+              <p>Materiales</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./tables2.php">
+              <i class="material-icons">content_paste</i>
+              <p>Marcas</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./tables3.php">
+              <i class="material-icons">content_paste</i>
+              <p>Productos</p>
             </a>
           </li>
           <li class="nav-item active ">
