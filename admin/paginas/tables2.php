@@ -82,6 +82,7 @@
               <p>Comentarios</p>
             </a>
           </li>
+          <a href="#"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.php">
                     <i class="material-icons">unarchive</i>
@@ -132,7 +133,8 @@
                             <!-- Nombre -->
                           </td>
                           <td>
-                            <!-- Acción -->
+                            <a href="#"><img class="icons" src="../icon/lapiz.png" alt="Editar"></a>
+                            <a href="#"><img class="icons" src="../icon/eliminar.png" alt="Eliminar"></a>
                           </td>
                         </tr>
                       </tbody>

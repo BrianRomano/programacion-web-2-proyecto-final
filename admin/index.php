@@ -65,6 +65,7 @@
               <p>Comentarios</p>
             </a>
           </li>
+          <a href="#"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
           <!-- your sidebar here -->
         </ul>
       </div>

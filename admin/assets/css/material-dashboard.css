@@ -22087,4 +22087,8 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
   margin: 0px auto;
   margin-top: 25px;
 }
+.icons{
+  margin: 3px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=dashboard-free.css.map */
