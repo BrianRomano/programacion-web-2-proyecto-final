@@ -21,17 +21,25 @@
 </head>
 
 <body class="dark-edition">
-    <div id="login">
-        <form action="../index.php" method="post">
+    <div id="login" class = "agregar">
+        <form action="" enctype="multipart/form-data" method="post">
             <div class="form-group">
-                <label for="exampleDropdownFormEmail1" class ="titulo">Usuario</label>
-                <input type="text" class="form-control" id="exampleDropdownFormEmail1">
+                <label for="exampleDropdownFormEmail1" class ="titulo">Nuevo producto</label>
+                <input type="text" class="form-control" name="nombreProducto" placeholder="Nombre">
+                <input type="text" class="form-control" name="precioProducto" placeholder="Precio">
+                <input type="text" class="form-control" name="descripcionProducto" placeholder="Descripción">
+                <label for="disponible">Disponible</label>
+                <input type="checkbox" name="diponible">
+                <label for="destacado">Destacado</label>
+                <input type="checkbox" name="destacado">
+                <select name class="form-control">
+                    <option class="form-control" value="Disponible">Categoria</option>
+                </select>
+                <select name class="form-control">
+                    <option class="form-control" value="Disponible">Marca</option>
+                </select>
             </div>
-            <div class="form-group">
-                <label for="exampleDropdownFormPassword1" class ="titulo">Contraseña</label>
-                <input type="password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary loginBtn">Iniciar sesión</button>
+            <button type="submit" class="btn btn-primary loginBtn">Agregar</button>
         </form>
     </div>
 </body>

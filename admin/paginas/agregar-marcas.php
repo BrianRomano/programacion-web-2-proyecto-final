@@ -21,17 +21,13 @@
 </head>
 
 <body class="dark-edition">
-    <div id="login">
-        <form action="../index.php" method="post">
+    <div id="login" class = "agregar">
+        <form action="" method="post">
             <div class="form-group">
-                <label for="exampleDropdownFormEmail1" class ="titulo">Usuario</label>
-                <input type="text" class="form-control" id="exampleDropdownFormEmail1">
+                <label for="exampleDropdownFormEmail1" class ="titulo">Nueva marca</label>
+                <input type="text" class="form-control" name="nombreMarca" placeholder="Nombre">
             </div>
-            <div class="form-group">
-                <label for="exampleDropdownFormPassword1" class ="titulo">Contraseña</label>
-                <input type="password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary loginBtn">Iniciar sesión</button>
+            <button type="submit" class="btn btn-primary loginBtn">Agregar</button>
         </form>
     </div>
 </body>

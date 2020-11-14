@@ -22069,7 +22069,7 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
 }
 #login{
   width: 25%;
-  height: 340px;
+  height: auto;
   margin: 0px auto;
   margin-top: 150px;
   padding: 10px;
