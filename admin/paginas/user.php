@@ -118,16 +118,17 @@
                           ID
                         </th>
                         <th>
-                          Email
+                          Usuario
                         </th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
                             <!-- Columna ID -->
+                            01
                           </td>
                           <td>
-                            <!-- Columna Email-->
+                            Admin
                           </td>
                           <td>
                             <!-- Columna Contraseña -->

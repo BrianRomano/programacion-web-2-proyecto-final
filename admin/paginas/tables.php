@@ -119,6 +119,9 @@
                         <th>
                           Nombre
                         </th>
+                        <th>
+                          Acción
+                        </th>
                       </thead>
                       <tbody>
                         <tr>
@@ -128,14 +131,16 @@
                           <td>
                             <!--  Nombre -->
                           </td>
+                          <td>
+                            <!-- Acción -->
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Modificar</button>
-              <button type="button" class="btn btn-primary col-md-2"style="margin-top:-60px; margin-left: 680px;float:left">Agregar</button>
+              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button>
             </div>
           </div>
         </div>
