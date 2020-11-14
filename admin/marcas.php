@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php 
+  session_start(); 
 
+  include('funciones.php');
+
+  if(isset($_POST['login'])){
+    if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
+      $_SESSION['usuario_logueado'] = true;
+    }
+  }
+
+  if(isset($_GET['logout'])){
+    unset($_SESSION['usuario_logueado']);
+  }
+
+  if(!isset($_SESSION['usuario_logueado'])){
+    redirect('login.php');
+  }
+?>
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
@@ -68,7 +86,7 @@
               <p>Comentarios</p>
             </a>
           </li>
-          <a href="#"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
+          <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.php">
                     <i class="material-icons">unarchive</i>
