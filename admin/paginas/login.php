@@ -25,13 +25,13 @@
         <form action="../index.php" method="post">
             <div class="form-group">
                 <label for="exampleDropdownFormEmail1" class ="titulo">Usuario</label>
-                <input type="text" class="form-control" id="exampleDropdownFormEmail1">
+                <input type="text" name="usuario" class="form-control" id="exampleDropdownFormEmail1">
             </div>
             <div class="form-group">
-                <label for="exampleDropdownFormPassword1" class ="titulo">Contraseña</label>
+                <label for="exampleDropdownFormPassword1" name="password" class ="titulo">Contraseña</label>
                 <input type="password" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary loginBtn">Iniciar sesión</button>
+            <button type="submit" class="btn btn-primary loginBtn" name="login">Iniciar sesión</button>
         </form>
     </div>
 </body>

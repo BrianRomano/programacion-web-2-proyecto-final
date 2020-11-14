@@ -1,3 +1,22 @@
+<?php 
+  session_start(); 
+
+  include('funciones.php');
+
+  if(isset($_POST['login'])){
+    if($_POST['password'] == '123' && $_POST['usuario'] == 'admin'){
+      $_SESSION['usuario_logueado'] = true;
+    }
+  }
+
+  if(isset($_GET['logout'])){
+    unset($_SESSION['usuario_logueado']);
+  }
+
+  if(!isset($_SESSION['usuario_logueado'])){
+    redirect('paginas/login.php');
+  }
+?>
 <!doctype html>
 <html lang="es">
 
@@ -36,36 +55,36 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/user.php">
+            <a class="nav-link" href="paginas/usuarios.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/tables.php">
+            <a class="nav-link" href="paginas/materiales.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/tables2.php">
+            <a class="nav-link" href="paginas/marcas.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/tables3.php">
+            <a class="nav-link" href="paginas/productos.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/typography.php">
+            <a class="nav-link" href="paginas/comentarios.php">
               <i class="material-icons">library_books</i>
               <p>Comentarios</p>
             </a>
           </li>
-          <a href="#"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
+          <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -83,31 +102,31 @@
       <div class="card text-center" style="width: 18rem; margin-top: 80px; margin-left: 70px; display: inline-block;">
         <div class="card-body">
           <h5 class="card-title">Usuarios</h5>
-          <a href="paginas/user.php" class="btn btn-primary">Ver usuarios</a>
+          <a href="paginas/usuarios.php" class="btn btn-primary">Ver usuarios</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Materiales</h5>
-          <a href="paginas/tables.php" class="btn btn-primary">Ver categorias</a>
+          <a href="paginas/materiales.php" class="btn btn-primary">Ver materiales</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Marcas</h5>
-          <a href="paginas/tables2.php" class="btn btn-primary">Ver marcas</a>
+          <a href="paginas/marcas.php" class="btn btn-primary">Ver marcas</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 70px; ">
         <div class="card-body">
           <h5 class="card-title">Productos</h5>
-          <a href="paginas/tables3.php" class="btn btn-primary">Ver productos</a>
+          <a href="paginas/productos.php" class="btn btn-primary">Ver productos</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Comentarios</h5>
-          <a href="paginas/typography.php" class="btn btn-primary">Ver comentarios</a>
+          <a href="paginas/comentarios.php" class="btn btn-primary">Ver comentarios</a>
         </div>
       </div>
     </div>

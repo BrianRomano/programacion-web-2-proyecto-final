@@ -42,7 +42,7 @@
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo"><a href="../index.php" class="simple-text logo-normal">
-          Administrador
+         Administrador
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -53,31 +53,31 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.php">
+            <a class="nav-link" href="./usuarios.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables.php">
+          <li class="nav-item">
+            <a class="nav-link" href="./materiales.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables2.php">
+          <li class="nav-item active">
+            <a class="nav-link" href="./marcas.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables3.php">
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
             </a>
           </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="./typography.php">
+          <li class="nav-item ">
+            <a class="nav-link" href="./comentarios.php">
               <i class="material-icons">library_books</i>
               <p>Comentarios</p>
             </a>
@@ -97,7 +97,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand">Comentarios</a>
+            <a class="navbar-brand">Marcas</a>
           </div>
         </div>
       </nav>
@@ -108,7 +108,7 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Comentarios</h4>
+                  <h4 class="card-title mt-0">Marcas</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -118,16 +118,10 @@
                           ID
                         </th>
                         <th>
-                          Email
+                          Nombre
                         </th>
                         <th>
-                          Comentario
-                        </th>
-                        <th>
-                          Puntuación
-                        </th>
-                        <th>
-                          ID Producto
+                          Acción
                         </th>
                       </thead>
                       <tbody>
@@ -136,26 +130,24 @@
                             <!-- ID -->
                           </td>
                           <td>
-                            <!-- Email  -->
+                            <!-- Nombre -->
                           </td>
                           <td>
-                            <!-- Comentario -->
+                            <a href="#"><img class="icons" src="../icon/lapiz.png" alt="Editar"></a>
+                            <a href="#"><img class="icons" src="../icon/eliminar.png" alt="Eliminar"></a>
                           </td>
-                          <td>
-                            <!-- Puntuación -->
-                          </td>
-                          <td>
-                            <!-- ID Producto -->
-                          </td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
+              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </body>
-
 </html>

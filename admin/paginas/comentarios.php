@@ -52,32 +52,32 @@
               <p>Inicio</p>
             </a>
           </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="./user.php">
+          <li class="nav-item ">
+            <a class="nav-link" href="./usuarios.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.php">
+            <a class="nav-link" href="./materiales.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables2.php">
+            <a class="nav-link" href="./marcas.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables3.php">
+            <a class="nav-link" href="./productos.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./typography.php">
+          <li class="nav-item active ">
+            <a class="nav-link" href="./comentarios.php">
               <i class="material-icons">library_books</i>
               <p>Comentarios</p>
             </a>
@@ -92,13 +92,12 @@
         </ul>
       </div>
     </div>
-    
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand">Usuarios</a>
+            <a class="navbar-brand">Comentarios</a>
           </div>
         </div>
       </nav>
@@ -109,7 +108,7 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0">Datos de usuarios</h4>
+                  <h4 class="card-title mt-0">Comentarios</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -119,19 +118,35 @@
                           ID
                         </th>
                         <th>
-                          Usuario
+                          Email
+                        </th>
+                        <th>
+                          Comentario
+                        </th>
+                        <th>
+                          Puntuación
+                        </th>
+                        <th>
+                          ID Producto
                         </th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
-                            <!-- Columna ID -->
-                            01
+                            <!-- ID -->
                           </td>
                           <td>
-                            Admin
+                            <!-- Email  -->
                           </td>
-                        </tr>
+                          <td>
+                            <!-- Comentario -->
+                          </td>
+                          <td>
+                            <!-- Puntuación -->
+                          </td>
+                          <td>
+                            <!-- ID Producto -->
+                          </td>
                       </tbody>
                     </table>
                   </div>
@@ -141,9 +156,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  
 </body>
 
 </html>

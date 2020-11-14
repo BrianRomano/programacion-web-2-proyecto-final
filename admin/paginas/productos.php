@@ -53,31 +53,31 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.php">
+            <a class="nav-link" href="./usuarios.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./tables.php">
+            <a class="nav-link" href="./materiales.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./tables2.php">
+            <a class="nav-link" href="./marcas.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./tables3.php">
+            <a class="nav-link" href="./productos.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.php">
+            <a class="nav-link" href="./comentarios.php">
               <i class="material-icons">library_books</i>
               <p>Comentarios</p>
             </a>
