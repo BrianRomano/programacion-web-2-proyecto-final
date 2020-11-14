@@ -1,10 +1,12 @@
+<!doctype html>
+<html lang="es">
 <?php 
   session_start(); 
 
   include('funciones.php');
 
   if(isset($_POST['login'])){
-    if($_POST['password'] == '123456' && $_POST['usuario'] == 'admin'){
+    if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
@@ -14,12 +16,9 @@
   }
 
   if(!isset($_SESSION['usuario_logueado'])){
-    redirect('paginas/login.php');
+    redirect('login.php');
   }
 ?>
-<!doctype html>
-<html lang="es">
-
 <head>
   <title>Panel de administración</title>
   <!-- Required meta tags -->
