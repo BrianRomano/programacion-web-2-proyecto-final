@@ -4,7 +4,7 @@
   include('funciones.php');
 
   if(isset($_POST['login'])){
-    if($_POST['password'] == '123' && $_POST['usuario'] == 'admin'){
+    if($_POST['password'] == '123456' && $_POST['usuario'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
@@ -55,31 +55,31 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/usuarios.php">
+            <a class="nav-link" href="usuarios.php">
               <i class="material-icons">person</i>
               <p>Usuarios</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/materiales.php">
+            <a class="nav-link" href="materiales.php">
               <i class="material-icons">content_paste</i>
               <p>Materiales</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/marcas.php">
+            <a class="nav-link" href="marcas.php">
               <i class="material-icons">content_paste</i>
               <p>Marcas</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/productos.php">
+            <a class="nav-link" href="productos.php">
               <i class="material-icons">content_paste</i>
               <p>Productos</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="paginas/comentarios.php">
+            <a class="nav-link" href="comentarios.php">
               <i class="material-icons">library_books</i>
               <p>Comentarios</p>
             </a>
@@ -102,31 +102,31 @@
       <div class="card text-center" style="width: 18rem; margin-top: 80px; margin-left: 70px; display: inline-block;">
         <div class="card-body">
           <h5 class="card-title">Usuarios</h5>
-          <a href="paginas/usuarios.php" class="btn btn-primary">Ver usuarios</a>
+          <a href="usuarios.php" class="btn btn-primary">Ver usuarios</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Materiales</h5>
-          <a href="paginas/materiales.php" class="btn btn-primary">Ver materiales</a>
+          <a href="materiales.php" class="btn btn-primary">Ver materiales</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Marcas</h5>
-          <a href="paginas/marcas.php" class="btn btn-primary">Ver marcas</a>
+          <a href="marcas.php" class="btn btn-primary">Ver marcas</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 70px; ">
         <div class="card-body">
           <h5 class="card-title">Productos</h5>
-          <a href="paginas/productos.php" class="btn btn-primary">Ver productos</a>
+          <a href="productos.php" class="btn btn-primary">Ver productos</a>
         </div>
       </div>
       <div class="card text-center" style="width: 18rem; display: inline-block; margin-left: 50px; ">
         <div class="card-body">
           <h5 class="card-title">Comentarios</h5>
-          <a href="paginas/comentarios.php" class="btn btn-primary">Ver comentarios</a>
+          <a href="comentarios.php" class="btn btn-primary">Ver comentarios</a>
         </div>
       </div>
     </div>

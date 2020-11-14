@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Panel de administración
@@ -14,18 +14,18 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-  <link href="../assets/css/material-dashboard.css" rel="stylesheet" />
+  <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <link href="assets/css/material-dashboard.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="dark-edition">
     <div id="login" class = "agregar">
         <form action="" method="post">
             <div class="form-group">
-                <label for="exampleDropdownFormEmail1" name="nombreMaterial" class ="titulo">Nuevo material</label>
-                <input type="text" class="form-control" placeholder="Nombre">
+                <label for="exampleDropdownFormEmail1" class ="titulo">Nueva marca</label>
+                <input type="text" class="form-control" name="nombreMarca" placeholder="Nombre">
             </div>
             <button type="submit" class="btn btn-primary loginBtn">Agregar</button>
         </form>
