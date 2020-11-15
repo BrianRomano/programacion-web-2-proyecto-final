@@ -87,12 +87,6 @@
             </a>
           </li>
           <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.php">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
       </div>
     </div>
@@ -150,38 +144,57 @@
                         </th>
                       </thead>
                       <tbody>
+                      <?php 
+                        include('../datos/producto.php');
+                        foreach($producto as $prod):
+                      ?>
                         <tr>
                           <td>
-                            <!--  ID -->
+                            <?php echo $prod['id_producto']?>
                           </td>
                           <td>
-                            <!-- Nombre -->
+                            <?php echo $prod['nombre']?>
                           </td>
                           <td>
-                            <!-- Precio -->
+                            <?php echo $prod['precio']?>
                           </td>
                           <td>
-                            <!-- Imagen -->
+                            <?php echo $prod['imagen']?>
                           </td>
                           <td>
-                            <!-- Descripcion -->
+                            <?php echo $prod['descripcion']?>
                           </td>
                           <td>
-                            <!-- Activo -->
+                            <?php 
+                              if($prod['activo'] == true){
+                                echo 'Si';
+                              } else {
+                                echo 'No';
+                              }
+                            ?>
                           </td>
                           <td>
-                            <!-- Destacado -->
+                          <?php 
+                              if($prod['destacado'] == true){
+                                echo 'Si';
+                              } else {
+                                echo 'No';
+                              }
+                            ?>
                           </td>
                           <td>
-                            <!-- ID Categoria -->
+                            <?php echo $prod['id_categoria']?> 
                           </td>
                           <td>
-                            <!-- ID Marca -->
+                            <?php echo $prod['id_marca']?>
                           </td>
                           <td>
-                            <a href="#"><img class="icons" src="icon/lapiz.png" alt="Editar"></a>
-                            <a href="#"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
+                            <a href="agregar-productos.php?edit=<?php echo $prod['id_producto']?>"><img class="icons" src="icon/lapiz.png" alt="Editar"></a>
+                            <a href="agregar-productos.php?del=<?php echo $prod['id_producto']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
                           </td>
+                        <?php 
+                          endforeach;
+                        ?>
                         </tr>
                       </tbody>
                     </table>
