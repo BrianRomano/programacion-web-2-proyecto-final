@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Login
   session_start(); 
 
   include('funciones.php');
@@ -17,6 +18,28 @@
 
   if(!isset($_SESSION['usuario_logueado'])){
     redirect('login.php');
+  }
+
+  //Agregar - Editar
+  $datos = file_get_contents('../datos/producto.json');
+  $datosJson = json_decode($datos,true);
+
+  if(isset($_POST['add'])){
+    if(isset($_GET['edit'])){
+        $id = $_GET['edit'];
+    }else{
+        $id = date('Ymdhis');
+    }
+  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_POST['imagen'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['id_categoria'], 'id_marca'=>$_POST['id_marca']);
+  $fp = fopen('../datos/producto.json','w');
+  $datosString = json_encode($datosJson);
+  fwrite($fp,$datosString);
+  fclose($fp);
+  redirect('productos.php');
+  }
+
+  if(isset($_GET['edit'])){
+      $dato = $datosJson[$_GET['edit']];
   }
 ?>
 <head>
@@ -40,25 +63,15 @@
 
 <body class="dark-edition">
     <div id="login" class = "agregar">
-        <form action="" enctype="multipart/form-data" method="post">
-            <div class="form-group">
-                <label for="exampleDropdownFormEmail1" class ="titulo">Nuevo producto</label>
-                <input type="text" class="form-control" name="nombreProducto" placeholder="Nombre">
-                <input type="text" class="form-control" name="precioProducto" placeholder="Precio">
-                <input type="text" class="form-control" name="descripcionProducto" placeholder="Descripción">
-                <label for="disponible">Disponible</label>
-                <input type="checkbox" name="diponible">
-                <label for="destacado">Destacado</label>
-                <input type="checkbox" name="destacado">
-                <select name class="form-control">
-                    <option class="form-control" value="Disponible">Categoria</option>
-                </select>
-                <select name class="form-control">
-                    <option class="form-control" value="Disponible">Marca</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary loginBtn">Agregar</button>
-        </form>
+    <form action="" method="post">
+          <div class="form-group">
+            <label for="exampleDropdownFormEmail1" name="nombreMaterial" class ="titulo">Nuevo producto</label>
+            <input type="text" placeholder="Nombre" name="nombre" class="form-control" value="<?php echo isset($dato)?$dato['nombre']:''?>">
+            <input type="text" placeholder="Precio" name="precio" class="form-control" value="<?php echo isset($dato)?$dato['precio']:''?>">
+            <input type="text" placeholder="Descripción" name="descripcion" class="form-control" value="<?php echo isset($dato)?$dato['descripcion']:''?>">
+            <input type="submit" class="btn btn-primary loginBtn" name="add" value="Agregar">
+          </div>
+      </form>
     </div>
 </body>
 </html>

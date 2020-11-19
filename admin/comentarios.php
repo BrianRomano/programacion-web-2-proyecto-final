@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Login
   session_start(); 
 
   include('funciones.php');
@@ -40,11 +41,6 @@
 <body class="dark-edition">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="assets/img/sidebar-2.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
       <div class="logo"><a href="index.php" class="simple-text logo-normal">
           Administrador
         </a></div>
@@ -87,12 +83,6 @@
             </a>
           </li>
           <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.php">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
       </div>
     </div>
@@ -135,22 +125,31 @@
                         </th>
                       </thead>
                       <tbody>
+                      <?php 
+                        $datos = file_get_contents("../datos/comentario.json");
+                        $datosJson = json_decode($datos, true);
+                        foreach($datosJson as $com):
+                      ?>
                         <tr>
                           <td>
-                            <!-- ID -->
+                            <?php echo $com['id_comentario']?>
                           </td>
                           <td>
-                            <!-- Email  -->
+                            <?php echo $com['email']?>
                           </td>
                           <td>
-                            <!-- Comentario -->
+                            <?php echo $com['comentario']?>
                           </td>
                           <td>
-                            <!-- Puntuación -->
+                            <?php echo $com['puntuacion']?>
                           </td>
                           <td>
-                            <!-- ID Producto -->
+                            <?php echo $com['id_producto']?>
                           </td>
+                        </tr>
+                        <?php 
+                          endforeach;
+                        ?>
                       </tbody>
                     </table>
                   </div>
@@ -161,5 +160,4 @@
         </div>
       </div>
 </body>
-
 </html>

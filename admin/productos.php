@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Login
   session_start(); 
 
   include('funciones.php');
@@ -17,6 +18,18 @@
 
   if(!isset($_SESSION['usuario_logueado'])){
     redirect('login.php');
+  }
+
+  //Eliminar
+  if(isset($_GET['del'])){
+    $datos = file_get_contents('../datos/producto.json');
+    $datosJson = json_decode($datos,true);
+    unset($datosJson[$_GET['del']]);
+    $fp = fopen('../datos/producto.json','w');
+    $datosString = json_encode($datosJson);
+    fwrite($fp,$datosString);
+    fclose($fp);
+    redirect('productos.php');
   }
 ?>
 <head>
@@ -36,15 +49,9 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
 </head>
-
 <body class="dark-edition">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="assets/img/sidebar-2.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
       <div class="logo"><a href="index.php" class="simple-text logo-normal">
          Administrador
         </a></div>
@@ -145,8 +152,9 @@
                       </thead>
                       <tbody>
                       <?php 
-                        include('../datos/producto.php');
-                        foreach($producto as $prod):
+                        $datos = file_get_contents("../datos/producto.json");
+                        $datosJson = json_decode($datos, true);
+                        foreach($datosJson as $prod):
                       ?>
                         <tr>
                           <td>
@@ -190,7 +198,7 @@
                           </td>
                           <td>
                             <a href="agregar-productos.php?edit=<?php echo $prod['id_producto']?>"><img class="icons" src="icon/lapiz.png" alt="Editar"></a>
-                            <a href="agregar-productos.php?del=<?php echo $prod['id_producto']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
+                            <a href="productos.php?del=<?php echo $prod['id_producto']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
                           </td>
                         <?php 
                           endforeach;
@@ -201,7 +209,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button>
+              <a href="agregar-productos.php"><button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button></a>
             </div>
           </div>
         </div>

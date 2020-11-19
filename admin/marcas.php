@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Login
   session_start(); 
 
   include('funciones.php');
@@ -17,6 +18,18 @@
 
   if(!isset($_SESSION['usuario_logueado'])){
     redirect('login.php');
+  }
+
+  //Eliminar
+  if(isset($_GET['del'])){
+    $datos = file_get_contents('../datos/marca.json');
+    $datosJson = json_decode($datos,true);
+    unset($datosJson[$_GET['del']]);
+    $fp = fopen('../datos/marca.json','w');
+    $datosString = json_encode($datosJson);
+    fwrite($fp,$datosString);
+    fclose($fp);
+    redirect('marcas.php');
   }
 ?>
 <head>
@@ -119,8 +132,9 @@
                       </thead>
                       <tbody>
                         <?php 
-                          include('../datos/marca.php');
-                          foreach($marca as $marc):
+                          $datos = file_get_contents("../datos/marca.json");
+                          $datosJson = json_decode($datos, true);
+                          foreach($datosJson as $marc):
                         ?>
                         <tr>
                           <td>
@@ -131,7 +145,7 @@
                           </td>
                           <td>
                             <a href="agregar-marcas.php?edit=<?php echo $marc['id_marca']?>"><img class="icons" src="icon/lapiz.png" alt="Editar"></a>
-                            <a href="agregar-marcas.php?del=<?php echo $marc['id_marca']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
+                            <a href="marcas.php?del=<?php echo $marc['id_marca']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
                           </td>
                         </tr>
                         <?php
@@ -142,7 +156,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button>
+              <a href="agregar-marcas.php"><button type="button" class="btn btn-primary col-md-2" style="margin-top:-60px; float:right">Agregar</button></a> 
             </div>
           </div>
         </div>

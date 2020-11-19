@@ -19,6 +19,18 @@
   if(!isset($_SESSION['usuario_logueado'])){
     redirect('login.php');
   }
+
+  //Eliminar
+  if(isset($_GET['del'])){
+    $datos = file_get_contents('../datos/categoria.json');
+    $datosJson = json_decode($datos,true);
+    unset($datosJson[$_GET['del']]);
+    $fp = fopen('../datos/categoria.json','w');
+    $datosString = json_encode($datosJson);
+    fwrite($fp,$datosString);
+    fclose($fp);
+    redirect('materiales.php');
+  }
 ?>
 <head>
   <meta charset="utf-8" />
@@ -133,7 +145,7 @@
                           </td>
                           <td>
                             <a href="agregar-materiales.php?edit=<?php echo $mat['id_categoria']?>"><img class="icons" src="icon/lapiz.png" alt="Editar"></a>
-                            <a href="agregar-materiales.php?del=<?php echo $mat['id_categoria']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
+                            <a href="materiales.php?del=<?php echo $mat['id_categoria']?>"><img class="icons" src="icon/eliminar.png" alt="Eliminar"></a>
                           </td>
                         </tr>
                       <?php 
