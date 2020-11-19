@@ -22085,10 +22085,25 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
 .loginBtn{
   display: block;
   margin: 0px auto;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .icons{
   margin: 3px;
   cursor: pointer;
 }
-/*# sourceMappingURL=dashboard-free.css.map */
+.agregarProducto{
+  width: 600px !important;
+}
+.form-group input[type=file] {
+  opacity: 1;
+  z-index: 5;
+}
+.form-group input[type=file]:hover{
+  cursor: pointer;
+}
+.opciones{
+  color: black;
+}
+#check{
+  margin-left: 20px;
+}

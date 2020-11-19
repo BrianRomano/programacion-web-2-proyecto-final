@@ -1,6 +1,1 @@
-{
-  "1": { "id_categoria": 1, "nombre": "Cuero" },
-  "2": { "id_categoria": 2, "nombre": "Dibujos" },
-  "3": { "id_categoria": 3, "nombre": "Madera" },
-  "4": { "id_categoria": 4, "nombre": "Silicona" }
-}
+{"1":{"id_categoria":1,"nombre":"Cuero"},"2":{"id_categoria":2,"nombre":"Dibujos"},"3":{"id_categoria":3,"nombre":"Madera"},"4":{"id_categoria":4,"nombre":"Silicona"}}
