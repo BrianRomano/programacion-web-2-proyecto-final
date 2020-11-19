@@ -8,4 +8,5 @@
             'id_producto' => ''
         )
     );
+    json_encode($comentario);
 ?>

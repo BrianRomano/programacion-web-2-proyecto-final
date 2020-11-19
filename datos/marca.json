@@ -1,0 +1,18 @@
+{
+  "1": {
+    "id_marca": 1,
+    "nombre": "iPhone"
+  },
+  "2": {
+    "id_marca": 2,
+    "nombre": "Samsung"
+  },
+  "3": {
+    "id_marca": 3,
+    "nombre": "Xiaomi"
+  },
+  "4": {
+    "id_marca": 4,
+    "nombre": "Huawei"
+  }
+}

@@ -177,4 +177,5 @@
             'id_marca' => 3
         )
     );
+    json_encode($producto);
 ?>

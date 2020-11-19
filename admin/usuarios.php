@@ -87,12 +87,6 @@
             </a>
           </li>
           <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.php">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
       </div>
     </div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Login  
   session_start(); 
 
   include('funciones.php');
@@ -119,8 +120,9 @@
                       </thead>
                       <tbody>
                       <?php 
-                        include('../datos/categoria.php');
-                        foreach($categoria as $mat):
+                        $datos = file_get_contents("../datos/categoria.json");
+                        $datosJson = json_decode($datos, true);
+                        foreach($datosJson as $mat):
                       ?>
                         <tr>
                           <td>

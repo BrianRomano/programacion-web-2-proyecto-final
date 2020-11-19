@@ -17,4 +17,5 @@
             'nombre' => 'Huawei'
         )
     );
+    json_encode($marca);
 ?>

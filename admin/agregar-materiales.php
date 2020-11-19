@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php 
+  //Sesion
   session_start(); 
 
   include('funciones.php');
@@ -43,9 +44,9 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="exampleDropdownFormEmail1" name="nombreMaterial" class ="titulo">Nuevo material</label>
-                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Nombre" value=<?php echo isset($dato)?$dato['nombre']:''?>>
             </div>
-            <button type="submit" class="btn btn-primary loginBtn">Agregar</button>
+            <button type="submit" class="btn btn-primary loginBtn" name= "add">Agregar</button>
         </form>
     </div>
 </body>
