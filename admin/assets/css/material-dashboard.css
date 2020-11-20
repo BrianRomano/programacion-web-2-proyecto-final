@@ -22093,6 +22093,7 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
 }
 .agregarProducto{
   width: 600px !important;
+  margin-top: 100px !important;
 }
 .form-group input[type=file] {
   opacity: 1;

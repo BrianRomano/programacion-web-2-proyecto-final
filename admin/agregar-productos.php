@@ -44,7 +44,8 @@
     }
 
 
-  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['id_categoria'], 'id_marca'=>$_POST['id_marca']);
+
+  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['categoria'], 'id_marca'=>$_POST['marca']);
   $fp = fopen('../datos/producto.json','w');
   $datosString = json_encode($datosJson);
   fwrite($fp,$datosString);
@@ -84,32 +85,34 @@
             <input type="text" placeholder="Precio" name="precio" class="form-control" value="<?php echo isset($dato)?$dato['precio']:''?>">
             <input type="text" placeholder="Descripción" name="descripcion" class="form-control" value="<?php echo isset($dato)?$dato['descripcion']:''?>">
             <select class="form-control">
+              <option selected="true" disabled="disabled">Material</option>
             <?php 
               $datos = file_get_contents("../datos/categoria.json");
               $datosJson = json_decode($datos, true);
               foreach($datosJson as $cat):
             ?>
-              <option class="opciones"><?php echo $cat['nombre']?></option>
+              <option class="opciones" value="<?php echo $cat['id_categoria']?>"><?php echo $cat['nombre']?></option>
             <?php 
               endforeach;
             ?>
             </select>
             <select class="form-control">
+              <option selected="true" disabled="disabled">Marca</option>
             <?php 
               $datos = file_get_contents("../datos/marca.json");
               $datosJson = json_decode($datos, true);
               foreach($datosJson as $marc):
             ?>
-              <option class="opciones"><?php echo $marc['nombre']?></option>
+              <option class="opciones" value="<?php echo $marc['id_marca']?>"><?php echo $marc['nombre']?></option>
             <?php 
               endforeach;
             ?>
             </select>
             <div id="check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Activo</label><br>
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Destacado</label>
+              <input type="checkbox" class="form-check-input" name="activo">
+              <label class="form-check-label">Disponible</label><br>
+              <input type="checkbox" class="form-check-input" name="destacado">
+              <label class="form-check-label">Destacado</label>
             </div>
           <div class="form-group">
             <input type="file" name="imagen" class="form-control-file" id="exampleFormControlFile1">
