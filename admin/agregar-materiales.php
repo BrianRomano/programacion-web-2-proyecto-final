@@ -6,12 +6,14 @@
 
   include('funciones.php');
 
+  //Iniciar sesion
   if(isset($_POST['login'])){
     if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
 
+  //Cerrar sesion
   if(isset($_GET['logout'])){
     unset($_SESSION['usuario_logueado']);
   }
@@ -30,12 +32,13 @@
     }else{
         $id = date('Ymdhis');
     }
-  $datosJson[$id] = array('id_categoria'=>$id, 'nombre'=>$_POST['nombre']);
-  $fp = fopen('../datos/categoria.json','w');
-  $datosString = json_encode($datosJson);
-  fwrite($fp,$datosString);
-  fclose($fp);
-  redirect('materiales.php');
+
+    $datosJson[$id] = array('id_categoria'=>$id, 'nombre'=>$_POST['nombre']);
+    $fp = fopen('../datos/categoria.json','w');
+    $datosString = json_encode($datosJson);
+    fwrite($fp,$datosString);
+    fclose($fp);
+    redirect('materiales.php');
   }
 
   if(isset($_GET['edit'])){

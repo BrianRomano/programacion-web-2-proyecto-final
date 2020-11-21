@@ -36,11 +36,11 @@
                     $categoria = json_decode($datosCat, true);
                     foreach($categoria as $cat):
                 ?>
-                    <li>
-                        <a href="productos.php?cat=<?php echo $cat['id_categoria']?>&marc=<?php echo isset($_GET['marc']) ? $_GET['marc'] : ''?>">
-                            <?php echo $cat['nombre']?>
-                        </a>
-                    </li>
+                <li>
+                    <a href="productos.php?cat=<?php echo $cat['id_categoria']?>&marc=<?php echo isset($_GET['marc']) ? $_GET['marc'] : ''?>">
+                        <?php echo $cat['nombre']?>
+                    </a>
+                </li>
                 <?php 
                     endforeach; 
                 ?> 
@@ -52,11 +52,11 @@
                     $marca = json_decode($datosMarc, true);
                     foreach($marca as $marc):
                 ?>
-                    <li>
-                        <a href="productos.php?marc=<?php echo $marc['id_marca']?>&cat=<?php echo isset($_GET['cat']) ? $_GET['cat'] : ''?>">
-                            <?php echo $marc['nombre']?>
-                        </a>
-                    </li>
+                <li>
+                    <a href="productos.php?marc=<?php echo $marc['id_marca']?>&cat=<?php echo isset($_GET['cat']) ? $_GET['cat'] : ''?>">
+                        <?php echo $marc['nombre']?>
+                    </a>
+                </li>
                 <?php 
                     endforeach;
                 ?>
@@ -88,16 +88,16 @@
                         }
                         if($imprimir):
             ?>
-                            <a href="detalle-producto.php?id=<?php echo $prod['id_producto']?>">
-                                <article class="articulo">
-                                    <img class="imagenProducto" src="imagenes/fundas/<?php echo $prod['imagen'] ?>" width="850" height="850">
-                                    <p>
-                                        <span id="tituloArticulo"><?php echo $prod['nombre'] ?></span><br>
-                                        <span id="precioArticulo">$<?php echo $prod['precio'] ?></span><br>
-                                        <span id="descripcionArticulo"><?php echo $prod['descripcion'] ?></span>
-                                    </p>
-                                </article>
-                            </a>    
+            <a href="detalle-producto.php?id=<?php echo $prod['id_producto']?>">
+                <article class="articulo">
+                    <img class="imagenProducto" src="imagenes/fundas/<?php echo $prod['imagen'] ?>" width="850" height="850">
+                    <p>
+                        <span id="tituloArticulo"><?php echo $prod['nombre'] ?></span><br>
+                        <span id="precioArticulo">$<?php echo $prod['precio'] ?></span><br>
+                        <span id="descripcionArticulo"><?php echo $prod['descripcion'] ?></span>
+                    </p>
+                </article>
+            </a>    
             <?php       
                         endif;
                     endif;

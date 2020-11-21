@@ -6,12 +6,14 @@
 
   include('funciones.php');
 
+  //Iniciar sesion
   if(isset($_POST['login'])){
     if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
 
+  //Cerrar sesion
   if(isset($_GET['logout'])){
     unset($_SESSION['usuario_logueado']);
   }

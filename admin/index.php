@@ -5,12 +5,14 @@
 
   include('funciones.php');
 
+  //Iniciar sesion 
   if(isset($_POST['login'])){
     if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
 
+  //Cerrar sesion
   if(isset($_GET['logout'])){
     unset($_SESSION['usuario_logueado']);
   }
@@ -35,11 +37,6 @@
 <body class="dark-edition">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
-      <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-      Tip 2: you can also add an image using data-image tag
-  -->
       <div class="logo">
         <a href="index.php" class="simple-text logo-normal">
           Administrador
@@ -84,7 +81,6 @@
             </a>
           </li>
           <a href="index.php?logout"><button type="submit" class="btn btn-primary loginBtn">Cerrar sesión</button></a>
-          <!-- your sidebar here -->
         </ul>
       </div>
     </div>

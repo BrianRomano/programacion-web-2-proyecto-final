@@ -6,12 +6,14 @@
 
   include('funciones.php');
 
+  //Iniciar sesion
   if(isset($_POST['login'])){
     if($_POST['pass'] == '123456' && $_POST['user'] == 'admin'){
       $_SESSION['usuario_logueado'] = true;
     }
   }
 
+  //Cerrar sesion
   if(isset($_GET['logout'])){
     unset($_SESSION['usuario_logueado']);
   }
@@ -26,13 +28,15 @@
 
   if(isset($_POST['add'])){
 
+    //Subir imagen
     if(isset($_FILES['imagen'])){
       $archivo = $_FILES["imagen"];
       $nombre = $archivo['name'];
       $tipo = $archivo["type"];
 
-      //Condición de tipo de archivo
+      //Condición de tipo de imagen
       if($tipo == "image/jpg" || $tipo == "image/jpeg" || $tipo == "image/png" || $tipo == "image/gif"){
+        //Guardar imagen en carpeta imagenes
         move_uploaded_file($archivo['tmp_name'], '../imagenes/fundas/'.$nombre);
       }
     }
@@ -43,12 +47,12 @@
         $id = date('Ymdhis');
     }
 
-  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['material'], 'id_marca'=>$_POST['marca']);
-  $fp = fopen('../datos/producto.json','w');
-  $datosString = json_encode($datosJson);
-  fwrite($fp,$datosString);
-  fclose($fp);
-  redirect('productos.php');
+    $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['material'], 'id_marca'=>$_POST['marca']);
+    $fp = fopen('../datos/producto.json','w');
+    $datosString = json_encode($datosJson);
+    fwrite($fp,$datosString);
+    fclose($fp);
+    redirect('productos.php');
   }
 
   if(isset($_GET['edit'])){
