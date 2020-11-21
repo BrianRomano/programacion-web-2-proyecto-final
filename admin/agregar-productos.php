@@ -43,9 +43,7 @@
         $id = date('Ymdhis');
     }
 
-
-
-  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['categoria'], 'id_marca'=>$_POST['marca']);
+  $datosJson[$id] = array('id_producto'=>$id, 'nombre'=>$_POST['nombre'], 'precio'=>$_POST['precio'], 'imagen'=>$_FILES['imagen']['name'], 'descripcion'=>$_POST['descripcion'], 'activo'=>$_POST['activo'], 'destacado'=>$_POST['destacado'], 'id_categoria'=>$_POST['material'], 'id_marca'=>$_POST['marca']);
   $fp = fopen('../datos/producto.json','w');
   $datosString = json_encode($datosJson);
   fwrite($fp,$datosString);
@@ -84,7 +82,7 @@
             <input type="text" placeholder="Nombre" name="nombre" class="form-control" value="<?php echo isset($dato)?$dato['nombre']:''?>">
             <input type="text" placeholder="Precio" name="precio" class="form-control" value="<?php echo isset($dato)?$dato['precio']:''?>">
             <input type="text" placeholder="Descripción" name="descripcion" class="form-control" value="<?php echo isset($dato)?$dato['descripcion']:''?>">
-            <select class="form-control">
+            <select class="form-control" name="material">
               <option selected="true" disabled="disabled">Material</option>
             <?php 
               $datos = file_get_contents("../datos/categoria.json");
@@ -96,7 +94,7 @@
               endforeach;
             ?>
             </select>
-            <select class="form-control">
+            <select class="form-control" name="marca">
               <option selected="true" disabled="disabled">Marca</option>
             <?php 
               $datos = file_get_contents("../datos/marca.json");
