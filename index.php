@@ -60,7 +60,8 @@
             <h1 id="titProductos">Destacados<span><a href="productos.php">Ver más</a></span></h1>
             <div class="row">
                 <?php 
-                   include("datos/producto.php"); 
+                   $datos = file_get_contents('datos/producto.json');
+                   $producto = json_decode($datos, true);
                    foreach($producto as $prod):
                         if($prod['activo'] == true && $prod['destacado'] == true):
                 ?>

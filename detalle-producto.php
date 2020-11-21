@@ -27,7 +27,8 @@
 
     <!-- Inicio - Contenido -->
     <?php 
-        include("datos/producto.php"); 
+        $datosProdu = file_get_contents('datos/producto.json');
+        $producto = json_decode($datosProdu, true);
         foreach($producto as $prod){
             if($prod['id_producto'] == $_GET['id']){
                 break;

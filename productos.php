@@ -32,7 +32,8 @@
             <div class="filtro">
                 <h4 class="">Categorias</h4>
                 <?php 
-                    include("datos/categoria.php");
+                    $datosCat = file_get_contents('datos/categoria.json');
+                    $categoria = json_decode($datosCat, true);
                     foreach($categoria as $cat):
                 ?>
                     <li>
@@ -47,7 +48,8 @@
             <div class="filtro">
                 <h4 class="">Marcas</h4>
                 <?php 
-                    include("datos/marca.php");
+                    $datosMarc = file_get_contents('datos/marca.json');
+                    $marca = json_decode($datosMarc, true);
                     foreach($marca as $marc):
                 ?>
                     <li>
@@ -69,7 +71,8 @@
         <section id="seccion">
             <h1 class = "titProductos">Productos</h1>
             <?php 
-                include("datos/producto.php");
+                $datosProd = file_get_contents('datos/producto.json');
+                $producto = json_decode($datosProd, true);
                 foreach($producto as $prod):
                     if($prod['activo'] == true):
                         $imprimir = true;
