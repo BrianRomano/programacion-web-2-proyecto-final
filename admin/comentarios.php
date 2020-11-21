@@ -123,14 +123,39 @@
                           Puntuación
                         </th>
                         <th>
-                          ID Producto
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              ID Producto
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="comentarios.php">Borrar filtro</a>
+                            <?php 
+                              $datosProd = file_get_contents('../datos/producto.json');
+                              $producto = json_decode($datosProd, true);
+                              foreach($producto as $prod):
+                            ?>
+                              <a class="dropdown-item" href="comentarios.php?id=<?php echo $prod['id_producto']?>"><?php echo $prod['id_producto']?></a>
+                            <?php
+                              endforeach;
+                            ?>
+                            </div>
+                          </div>
                         </th>
                       </thead>
                       <tbody>
                       <?php 
                         $datos = file_get_contents("../datos/comentario.json");
                         $datosJson = json_decode($datos, true);
-                        foreach($datosJson as $com):
+                        if(!empty($datosJson)):
+                          foreach($datosJson as $com):
+                            $imprimir = true;
+                            //Comprobar si existe un filtro
+                            if(isset($_GET['id'])){
+                              $imprimir = true;
+                              //Filtrar
+                              if($com['id_producto'] == $_GET['id']);
+                            }
+                            if($imprimir):
                       ?>
                         <tr>
                           <td>
@@ -150,7 +175,9 @@
                           </td>
                         </tr>
                         <?php 
-                          endforeach;
+                              endif;
+                            endforeach;
+                          endif;
                         ?>
                       </tbody>
                     </table>
@@ -161,5 +188,9 @@
           </div>
         </div>
       </div>
+    <!-- Scripts  -->
+    <script src="../bootstrap/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/popper/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

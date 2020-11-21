@@ -85,15 +85,15 @@
             <input class="botonAside crear comentar" name="comentar" type="submit" value="Comentar">
         </form>
         <div class="comentarioRealizado">
-            <h4>Comentarios del producto</h4>
             <?php     
                 $datosCom = file_get_contents('datos/comentario.json');
                 $comentario = json_decode($datosCom,true);
-                //Mostrar últimos 10 comentarios
-                arsort($comentario);
-                $ultimosCom = array_slice($comentario, 0, 10);
-                //Mostrar solo si existen comentarios
                 if(!empty($comentario)):
+                    echo "<h4>Comentarios del producto</h4>";
+                    //Mostrar últimos 10 comentarios
+                    arsort($comentario);
+                    $ultimosCom = array_slice($comentario, 0, 10);
+                    //Mostrar solo si existen comentarios
                     foreach($ultimosCom as $com):
                         //Mostrar comentarios correspondiente al producto
                         if($com['id_producto'] == $_GET['id']):
