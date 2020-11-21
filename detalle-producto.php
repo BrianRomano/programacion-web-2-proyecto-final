@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php 
+    //Agregar comentario
+    $datosCom = file_get_contents('datos/comentario.json');
+    $Comentario = json_decode($datosCom,true);
+
+    if(isset($_POST['comentar'])){
+        $id = date('Ymdhis');
+        $Comentario[$id] = array('id_comentario'=>$id, 'email'=>$_POST['email'], 'comentario'=>$_POST['comentario'], 'calificacion'=>$_POST['calificacion'], 'id_producto'=>$_GET['id']);
+        $fp = fopen('datos/comentario.json','w');
+        $datosString = json_encode($Comentario);
+        fwrite($fp,$datosString);
+        fclose($fp);
+    }
+?>
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -46,44 +60,60 @@
                 <br><input class="botonDetalle agregarCarrito" type="submit" value = "Agregar al carrito">
             </p>
         </article>
-        <div class="comentarios">
+        <form class="comentarios" method="post">
             <h4>Califique el producto</h4>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="Ingrese su email">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentario</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
+                <textarea class="form-control" name="comentario" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
             </div>
             <p class="clasificacion">
-                <input id="radio1" type="radio" name="estrellas" value="5">
-                <label class="estrella" for="radio1">★</label>
-                <input id="radio2" type="radio" name="estrellas" value="4">
+                <input id="radio1" type="radio" name="calificacion" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="calificacion" value="4">
                 <label for="radio2">★</label>
-                <input id="radio3" type="radio" name="estrellas" value="3">
+                <input id="radio3" type="radio" name="calificacion" value="3">
                 <label for="radio3">★</label>
-                <input id="radio4" type="radio" name="estrellas" value="2">
+                <input id="radio4" type="radio" name="calificacion" value="2">
                 <label for="radio4">★</label>
-                <input id="radio5" type="radio" name="estrellas" value="1">
+                <input id="radio5" type="radio" name="calificacion" value="1">
                 <label for="radio5">★</label>
             </p>
-            <input class="botonAside crear comentar" type="submit" value="Comentar">
-        </div>
+            <input class="botonAside crear comentar" name="comentar" type="submit" value="Comentar">
+        </form>
         <div class="comentarioRealizado">
             <h4>Comentarios del producto</h4>
-            <?php include_once("datos/comentario.php"); ?>
+            <?php     
+                $datosCom = file_get_contents('datos/comentario.json');
+                $comentario = json_decode($datosCom,true);
+                //Mostrar últimos 10 comentarios
+                arsort($comentario);
+                $ultimosCom = array_slice($comentario, 0, 10);
+                //Mostrar solo si existen comentarios
+                if(!empty($comentario)):
+                    foreach($ultimosCom as $com):
+                        //Mostrar comentarios correspondiente al producto
+                        if($com['id_producto'] == $_GET['id']):
+            ?>
             <article>
                 <p class = "nombreUsuario">
-                    Usuario:
+                    Email: <?php echo $com['email'] ?>
                 </p>
                 <p class = "comentarioUsuario">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione quos animi nobis facere excepturi totam repudiandae. Molestias ducimus doloribus tenetur doloremque? Id ducimus repudiandae officiis obcaecati neque aliquid deleniti!
+                    <?php echo $com['comentario'] ?>
                 </p>
                 <p class="calificacionUsuario">
-                    Calificación:
+                    Calificación: <?php echo $com['calificacion'] ?>
                 </p>
             </article>
+            <?php 
+                        endif;
+                    endforeach;
+                endif;
+            ?>
         </div>
     </div>
     <!-- Fin - Contenido -->
