@@ -153,7 +153,9 @@
                             if(isset($_GET['id'])){
                               $imprimir = true;
                               //Filtrar
-                              if($com['id_producto'] == $_GET['id']);
+                              if($com['id_producto'] != $_GET['id']){
+                                $imprimir = false;
+                              }
                             }
                             if($imprimir):
                       ?>
